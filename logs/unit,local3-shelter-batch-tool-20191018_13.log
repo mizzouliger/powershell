@@ -1,0 +1,21 @@
+2019-10-18 13:00:35,041 1859 [main] DEBUG c.s.majesco.batch.dao.StgBaseDao - table row: {NEXT_BUSINESS_DATE=2019-10-18 00:00:00.0}
+2019-10-18 13:00:35,053 1871 [main] DEBUG c.s.majesco.batch.dao.StgBaseDao - nextBusinessDate: 2019-10-18 00:00:00.0
+2019-10-18 13:00:35,076 1894 [main] DEBUG c.s.majesco.batch.dao.StgBaseDao - processing with NEXT_BUSINESS_DATE: 10/18/2019
+2019-10-18 13:01:21,663 1582 [main] DEBUG c.s.majesco.batch.dao.StgBaseDao - table row: {NEXT_BUSINESS_DATE=2019-10-18 00:00:00.0}
+2019-10-18 13:01:21,674 1593 [main] DEBUG c.s.majesco.batch.dao.StgBaseDao - nextBusinessDate: 2019-10-18 00:00:00.0
+2019-10-18 13:01:21,693 1612 [main] DEBUG c.s.majesco.batch.dao.StgBaseDao - processing with NEXT_BUSINESS_DATE: 10/18/2019
+2019-10-18 13:02:17,002 1666 [main] DEBUG c.s.majesco.batch.dao.StgBaseDao - table row: {NEXT_BUSINESS_DATE=2019-10-18 00:00:00.0}
+2019-10-18 13:02:17,009 1673 [main] DEBUG c.s.majesco.batch.dao.StgBaseDao - nextBusinessDate: 2019-10-18 00:00:00.0
+2019-10-18 13:02:17,025 1689 [main] DEBUG c.s.majesco.batch.dao.StgBaseDao - processing with NEXT_BUSINESS_DATE: 10/18/2019
+2019-10-18 13:04:17,126 1560 [main] DEBUG c.s.majesco.batch.dao.StgBaseDao - table row: {NEXT_BUSINESS_DATE=2019-10-18 00:00:00.0}
+2019-10-18 13:04:17,136 1570 [main] DEBUG c.s.majesco.batch.dao.StgBaseDao - nextBusinessDate: 2019-10-18 00:00:00.0
+2019-10-18 13:04:17,150 1584 [main] DEBUG c.s.majesco.batch.dao.StgBaseDao - processing with NEXT_BUSINESS_DATE: 10/18/2019
+2019-10-18 13:04:28,213 1529 [main] DEBUG c.s.majesco.batch.dao.StgBaseDao - table row: {NEXT_BUSINESS_DATE=2019-10-18 00:00:00.0}
+2019-10-18 13:04:28,223 1539 [main] DEBUG c.s.majesco.batch.dao.StgBaseDao - nextBusinessDate: 2019-10-18 00:00:00.0
+2019-10-18 13:04:28,239 1555 [main] DEBUG c.s.majesco.batch.dao.StgBaseDao - processing with NEXT_BUSINESS_DATE: 10/18/2019
+2019-10-18 13:05:22,930 1579 [main] DEBUG c.s.majesco.batch.dao.StgBaseDao - table row: {NEXT_BUSINESS_DATE=2019-10-18 00:00:00.0}
+2019-10-18 13:05:22,940 1589 [main] DEBUG c.s.majesco.batch.dao.StgBaseDao - nextBusinessDate: 2019-10-18 00:00:00.0
+2019-10-18 13:05:22,956 1605 [main] DEBUG c.s.majesco.batch.dao.StgBaseDao - processing with NEXT_BUSINESS_DATE: 10/18/2019
+2019-10-18 13:05:38,240 1563 [main] DEBUG c.s.majesco.batch.dao.StgBaseDao - table row: {NEXT_BUSINESS_DATE=2019-10-18 00:00:00.0}
+2019-10-18 13:05:38,249 1572 [main] DEBUG c.s.majesco.batch.dao.StgBaseDao - nextBusinessDate: 2019-10-18 00:00:00.0
+2019-10-18 13:05:38,264 1587 [main] DEBUG c.s.majesco.batch.dao.StgBaseDao - processing with NEXT_BUSINESS_DATE: 10/18/2019

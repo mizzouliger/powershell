@@ -1,0 +1,3011 @@
+2019-10-15 15:05:48,538 1525 [main] DEBUG c.s.majesco.batch.dao.StgBaseDao - table row: {NEXT_BUSINESS_DATE=2020-03-15 00:00:00.0}
+2019-10-15 15:05:48,546 1533 [main] DEBUG c.s.majesco.batch.dao.StgBaseDao - nextBusinessDate: 2020-03-15 00:00:00.0
+2019-10-15 15:05:48,564 1551 [main] DEBUG c.s.majesco.batch.dao.StgBaseDao - processing with NEXT_BUSINESS_DATE: 03/15/2020
+2019-10-15 15:05:59,117 12104 [main] INFO  c.s.m.batch.agedata.AgeDataRunner - Starting AgeDataRunner on COL-ISD-D90909 with PID 7568 (D:\Tools\shelter-batch-tool\lib\shelter-majesco-batch-3.1.0.BUILD-20190624.162757.jar started by tso8001 in D:\Tools\shelter-batch-tool)
+2019-10-15 15:05:59,123 12110 [main] DEBUG c.s.m.batch.agedata.AgeDataRunner - Running with Spring Boot v1.5.5.RELEASE, Spring v4.3.10.RELEASE
+2019-10-15 15:05:59,124 12111 [main] INFO  c.s.m.batch.agedata.AgeDataRunner - The following profiles are active: unit,local3
+2019-10-15 15:05:59,264 12251 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@63021689: startup date [Tue Oct 15 15:05:59 CDT 2019]; root of context hierarchy
+2019-10-15 15:06:00,591 13578 [main] WARN  o.s.c.a.ConfigurationClassEnhancer - @Bean method ScopeConfiguration.stepScope is non-static and returns an object assignable to Spring's BeanFactoryPostProcessor interface. This will result in a failure to process annotations such as @Autowired, @Resource and @PostConstruct within the method's declaring @Configuration class. Add the 'static' modifier to this method to avoid these container lifecycle issues; see @Bean javadoc for complete details.
+2019-10-15 15:06:00,613 13600 [main] WARN  o.s.c.a.ConfigurationClassEnhancer - @Bean method ScopeConfiguration.jobScope is non-static and returns an object assignable to Spring's BeanFactoryPostProcessor interface. This will result in a failure to process annotations such as @Autowired, @Resource and @PostConstruct within the method's declaring @Configuration class. Add the 'static' modifier to this method to avoid these container lifecycle issues; see @Bean javadoc for complete details.
+2019-10-15 15:06:00,627 13614 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-10-15 15:06:00,676 13663 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$cc19b948] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-15 15:06:00,752 13739 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'rabbitMQConfig' of type [com.shelter.majesco.batch.config.rabbit.RabbitMQConfig$$EnhancerBySpringCGLIB$$d110528f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-15 15:06:00,766 13753 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5adfb1a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-15 15:06:00,853 13840 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'truncationProcessor' of type [com.shelter.billing.utils.logging.TruncationProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-15 15:06:00,863 13850 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'objectMapperConfig' of type [com.shelter.majesco.batch.config.ObjectMapperConfig$$EnhancerBySpringCGLIB$$4ddb9b25] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-15 15:06:00,877 13864 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.jackson-org.springframework.boot.autoconfigure.jackson.JacksonProperties' of type [org.springframework.boot.autoconfigure.jackson.JacksonProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-15 15:06:00,885 13872 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration$$EnhancerBySpringCGLIB$$cea522b3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-15 15:06:00,898 13885 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'standardJacksonObjectMapperBuilderCustomizer' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration$StandardJackson2ObjectMapperBuilderCustomizer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-15 15:06:00,914 13901 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration$$EnhancerBySpringCGLIB$$138e3cc4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-15 15:06:00,929 13916 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JodaDateTimeJacksonConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JodaDateTimeJacksonConfiguration$$EnhancerBySpringCGLIB$$98b18128] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-15 15:06:00,943 13930 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'jodaDateTimeSerializationModule' of type [com.fasterxml.jackson.databind.module.SimpleModule] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-15 15:06:00,948 13935 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$$EnhancerBySpringCGLIB$$434d183a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-15 15:06:00,974 13961 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'jsonComponentModule' of type [org.springframework.boot.jackson.JsonComponentModule] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-15 15:06:00,991 13978 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'jacksonObjectMapperBuilder' of type [org.springframework.http.converter.json.Jackson2ObjectMapperBuilder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-15 15:06:01,123 14110 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'jacksonObjectMapper' of type [com.fasterxml.jackson.databind.ObjectMapper] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-15 15:06:01,143 14130 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'sensitiveDataMasker' of type [com.shelter.billing.utils.logging.SensitiveDataMasker] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-15 15:06:01,147 14134 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'inboundMessagePostProcessorLogger' of type [com.shelter.billing.utils.amqp.core.processors.logging.InboundMessagePostProcessorLogger] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-15 15:06:01,151 14138 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'outboundMessagePostProcessorLogger' of type [com.shelter.billing.utils.amqp.core.processors.logging.OutboundMessagePostProcessorLogger] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-15 15:06:01,381 14368 [main] WARN  o.s.b.c.c.a.DefaultBatchConfigurer - No datasource was provided...using a Map based JobRepository
+2019-10-15 15:06:01,433 14420 [main] INFO  o.s.b.c.l.support.SimpleJobLauncher - No TaskExecutor has been set, defaulting to synchronous executor.
+2019-10-15 15:06:02,467 15454 [main] INFO  o.s.u.f.SpringTemplateLoader - SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.context.annotation.AnnotationConfigApplicationContext@63021689: startup date [Tue Oct 15 15:05:59 CDT 2019]; root of context hierarchy] and template loader path [classpath:/templates/]
+2019-10-15 15:06:02,625 15612 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2019-10-15 15:06:02,639 15626 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'sayConnectionFactory' has been autodetected for JMX exposure
+2019-10-15 15:06:02,640 15627 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'shelterConnectionFactory' has been autodetected for JMX exposure
+2019-10-15 15:06:02,647 15634 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'shelterConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=shelterConnectionFactory,type=CachingConnectionFactory]
+2019-10-15 15:06:02,675 15662 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'sayConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=sayConnectionFactory,type=CachingConnectionFactory]
+2019-10-15 15:06:02,686 15673 [main] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase -2147482648
+2019-10-15 15:06:02,686 15673 [main] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+2019-10-15 15:06:02,702 15689 [main] INFO  o.s.b.a.b.JobLauncherCommandLineRunner - Running default command line with: [unit, 2020-03-16, shelter-batch-tool, D:/Tools/shelter-batch-tool/logs, aparashar@shelterinsurance.com]
+2019-10-15 15:06:02,778 15765 [main] INFO  o.s.b.c.l.support.SimpleJobLauncher - Job: [FlowJob: [name=majescoNightlyBatch]] launched with the following parameters: [{run.id=1}]
+2019-10-15 15:06:02,800 15787 [main] INFO  o.s.b.core.job.SimpleStepHandler - Executing step: [stepStartBatch]
+2019-10-15 15:06:02,825 15812 [main] DEBUG c.s.m.b.tasklet.StartBatchTasklet - === APPLICATION PROPERTIES START ===
+2019-10-15 15:06:02,826 15813 [main] DEBUG c.s.m.b.tasklet.StartBatchTasklet - businessBeginningOfDay: NEXT_BUSINESS_DATE
+2019-10-15 15:06:02,827 15814 [main] DEBUG c.s.m.b.tasklet.StartBatchTasklet - batchUrl: https://mbsu.shelterinsurance.com:8743/jbeamicd?wsdl
+2019-10-15 15:06:02,827 15814 [main] DEBUG c.s.m.b.tasklet.StartBatchTasklet - seqNo: 0
+2019-10-15 15:06:02,828 15815 [main] DEBUG c.s.m.b.tasklet.StartBatchTasklet - statusStartedPollCount: 60
+2019-10-15 15:06:02,828 15815 [main] DEBUG c.s.m.b.tasklet.StartBatchTasklet - sleepBetweenStatusStartedPollsInSeconds: 15
+2019-10-15 15:06:02,828 15815 [main] DEBUG c.s.m.b.tasklet.StartBatchTasklet - getBatchCompletedDataPollCount: 120
+2019-10-15 15:06:02,828 15815 [main] DEBUG c.s.m.b.tasklet.StartBatchTasklet - sleepBetweenGetBatchCompletedDataPollsInSeconds: 30
+2019-10-15 15:06:02,829 15816 [main] DEBUG c.s.m.b.tasklet.StartBatchTasklet - emailThresholdMillis: 900000
+2019-10-15 15:06:02,829 15816 [main] DEBUG c.s.m.b.tasklet.StartBatchTasklet - timeoutThresholdMillis: 3600000
+2019-10-15 15:06:02,829 15816 [main] DEBUG c.s.m.b.tasklet.StartBatchTasklet - majescoBatchUser: batchadmin
+2019-10-15 15:06:02,830 15817 [main] DEBUG c.s.m.b.tasklet.StartBatchTasklet - majescoInstallationCode: STGMil14
+2019-10-15 15:06:02,830 15817 [main] DEBUG c.s.m.b.tasklet.StartBatchTasklet - batchName: UNIT BATCH
+2019-10-15 15:06:02,830 15817 [main] DEBUG c.s.m.b.tasklet.StartBatchTasklet - === APPLICATION PROPERTIES END ===
+2019-10-15 15:06:02,986 15973 [main] DEBUG c.s.majesco.batch.dao.StgBaseDao - table row: {NEXT_BUSINESS_DATE=2020-03-15 00:00:00.0}
+2019-10-15 15:06:02,987 15974 [main] DEBUG c.s.majesco.batch.dao.StgBaseDao - nextBusinessDate: 2020-03-15 00:00:00.0
+2019-10-15 15:06:02,988 15975 [main] DEBUG c.s.majesco.batch.dao.StgBaseDao - processing with NEXT_BUSINESS_DATE: 03/15/2020
+2019-10-15 15:06:03,349 16336 [main] DEBUG c.s.m.b.service.MajescoSOAPService - Majesco BATCH endpoint: https://mbsu.shelterinsurance.com:8743/jbeamicd?wsdl
+2019-10-15 15:06:03,383 16370 [main] DEBUG c.s.m.b.service.MajescoSOAPService - Majesco BATCH Request:
+<wslite.http.HTTPRequest@1c32386d sslTrustAllCerts=false proxy=null useCaches=false followRedirects=true sslTrustStoreFile=null url=https://mbsu.shelterinsurance.com:8743/jbeamicd?wsdl headers={Content-Type=text/xml; charset=UTF-8} readTimeout=1200000 connectTimeout=600000 method=POST>
+2019-10-15 15:06:03,384 16371 [main] DEBUG c.s.m.b.service.MajescoSOAPService - Request Body:
+<?xml version='1.0' encoding='UTF-8'?>
+<soapenv:Envelope xmlns:soapenv='http://schemas.xmlsoap.org/soap/envelope/' xmlns:ser='http://services.server.ws.monitor.stgmastek.com/'>
+  <soapenv:Header />
+  <soapenv:Body><ser:runBatch><reqInstructionLog><installationCode>STGMil14</installationCode><instructingUser>batchadmin</instructingUser><instructionParameters><name>BATCH_NAME</name><slNo>1</slNo><type>S</type><value>UNIT BATCH</value></instructionParameters><instructionParameters><name>BATCH_TYPE</name><slNo>2</slNo><type>S</type><value>DATE</value></instructionParameters><instructionParameters><name>BATCH_RUN_DATE</name><slNo>3</slNo><type>TS</type><value>03/15/2020 00:00:00</value></instructionParameters><instructionParameters><name>SCHEDULE_DATE</name><slNo>4</slNo><type>TS</type><value>10/15/2019 15:06:03</value></instructionParameters><instructionTime>1571169963004</instructionTime><message>BSRUNBATCH</message></reqInstructionLog></ser:runBatch></soapenv:Body>
+</soapenv:Envelope>
+2019-10-15 15:06:03,388 16375 [main] DEBUG c.s.m.b.service.MajescoSOAPService - Majesco BATCH Response:
+<wslite.http.HTTPResponse@1477089c expiration=Wed Dec 31 18:00:00 CST 1969 statusMessage=OK charset=UTF-8 date=Tue Oct 15 15:05:59 CDT 2019 contentLength=495 lastModified=Wed Dec 31 18:00:00 CST 1969 url=https://mbsu.shelterinsurance.com:8743/jbeamicd?wsdl statusCode=200 headers={=HTTP/1.1 200 OK, Access-Control-Allow-Credentials=include, Access-Control-Allow-Headers=origin, content-type, accept, authorization, Access-Control-Allow-Methods=GET, POST, PUT, DELETE, OPTIONS, HEAD, Access-Control-Allow-Origin=*, Access-Control-Max-Age=1209600, Connection=close, Content-Length=495, Content-Type=text/xml;charset=UTF-8, Date=Tue, 15 Oct 2019 20:05:59 GMT} contentEncoding=null contentType=text/xml>
+2019-10-15 15:06:03,426 16413 [main] DEBUG c.s.m.b.service.MajescoSOAPService - Response Body:
+<?xml version="1.0" encoding="UTF-8"?><soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <ns2:runBatchResponse xmlns:ns2="http://services.server.ws.monitor.stgmastek.com/">
+      <return>
+        <responseTime>1571169959965</responseTime>
+        <responseType>OK</responseType>
+        <batchDetails>
+          <installationCode>STGMil14</installationCode>
+          <instructionSeqNo>74048</instructionSeqNo>
+        </batchDetails>
+        <revisionBatch>false</revisionBatch>
+        <scheduledBatch>false</scheduledBatch>
+      </return>
+    </ns2:runBatchResponse>
+  </soap:Body>
+</soap:Envelope>
+
+2019-10-15 15:06:03,440 16427 [main] DEBUG c.s.m.b.tasklet.StartBatchTasklet - statusStartedPollCount: 60
+2019-10-15 15:06:03,442 16429 [main] DEBUG c.s.m.b.tasklet.StartBatchTasklet - checking if batch is started - count: 0
+2019-10-15 15:06:18,451 31438 [main] DEBUG c.s.m.b.tasklet.StartBatchTasklet - waited for 15 second
+2019-10-15 15:06:18,523 31510 [main] DEBUG c.s.m.b.service.MajescoSOAPService - Majesco BATCH endpoint: https://mbsu.shelterinsurance.com:8743/jbeamicd?wsdl
+2019-10-15 15:06:18,526 31513 [main] DEBUG c.s.m.b.service.MajescoSOAPService - Majesco BATCH Request:
+<wslite.http.HTTPRequest@373ebf74 sslTrustAllCerts=false proxy=null useCaches=false followRedirects=true sslTrustStoreFile=null url=https://mbsu.shelterinsurance.com:8743/jbeamicd?wsdl headers={Content-Type=text/xml; charset=UTF-8} readTimeout=1200000 connectTimeout=600000 method=POST>
+2019-10-15 15:06:18,526 31513 [main] DEBUG c.s.m.b.service.MajescoSOAPService - Request Body:
+<?xml version='1.0' encoding='UTF-8'?>
+<soapenv:Envelope xmlns:soapenv='http://schemas.xmlsoap.org/soap/envelope/' xmlns:ser='http://services.server.ws.monitor.stgmastek.com/'>
+  <soapenv:Header />
+  <soapenv:Body><ser:checkInstructionLog>
+  <reqInstructionLog>
+    <installationCode>STGMil14</installationCode>
+    <seqNo>74048</seqNo>
+  </reqInstructionLog>
+</ser:checkInstructionLog></soapenv:Body>
+</soapenv:Envelope>
+2019-10-15 15:06:18,527 31514 [main] DEBUG c.s.m.b.service.MajescoSOAPService - Majesco BATCH Response:
+<wslite.http.HTTPResponse@c4ed84 expiration=Wed Dec 31 18:00:00 CST 1969 statusMessage=OK charset=UTF-8 date=Tue Oct 15 15:06:15 CDT 2019 contentLength=465 lastModified=Wed Dec 31 18:00:00 CST 1969 url=https://mbsu.shelterinsurance.com:8743/jbeamicd?wsdl statusCode=200 headers={=HTTP/1.1 200 OK, Access-Control-Allow-Credentials=include, Access-Control-Allow-Headers=origin, content-type, accept, authorization, Access-Control-Allow-Methods=GET, POST, PUT, DELETE, OPTIONS, HEAD, Access-Control-Allow-Origin=*, Access-Control-Max-Age=1209600, Connection=close, Content-Length=465, Content-Type=text/xml;charset=UTF-8, Date=Tue, 15 Oct 2019 20:06:15 GMT} contentEncoding=null contentType=text/xml>
+2019-10-15 15:06:18,529 31516 [main] DEBUG c.s.m.b.service.MajescoSOAPService - Response Body:
+<?xml version="1.0" encoding="UTF-8"?><soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <ns2:checkInstructionLogResponse xmlns:ns2="http://services.server.ws.monitor.stgmastek.com/">
+      <return>
+        <responseTime>1571169975199</responseTime>
+        <responseType>OK</responseType>
+        <instructionLog>
+          <batchAction>BATCH STARTED</batchAction>
+          <installationCode>JBM_9470</installationCode>
+          <seqNo>74048</seqNo>
+        </instructionLog>
+      </return>
+    </ns2:checkInstructionLogResponse>
+  </soap:Body>
+</soap:Envelope>
+
+2019-10-15 15:06:18,532 31519 [main] DEBUG c.s.m.b.tasklet.StartBatchTasklet - checking if batch is started - count: 1
+2019-10-15 15:06:18,616 31603 [main] DEBUG c.s.m.b.service.MajescoSOAPService - Majesco BATCH endpoint: https://mbsu.shelterinsurance.com:8743/jbeamicd?wsdl
+2019-10-15 15:06:18,621 31608 [main] DEBUG c.s.m.b.service.MajescoSOAPService - Majesco BATCH Request:
+<wslite.http.HTTPRequest@31d0e481 sslTrustAllCerts=false proxy=null useCaches=false followRedirects=true sslTrustStoreFile=null url=https://mbsu.shelterinsurance.com:8743/jbeamicd?wsdl headers={Content-Type=text/xml; charset=UTF-8} readTimeout=1200000 connectTimeout=600000 method=POST>
+2019-10-15 15:06:18,622 31609 [main] DEBUG c.s.m.b.service.MajescoSOAPService - Request Body:
+<?xml version='1.0' encoding='UTF-8'?>
+<soapenv:Envelope xmlns:soapenv='http://schemas.xmlsoap.org/soap/envelope/' xmlns:ser='http://services.server.ws.monitor.stgmastek.com/'>
+  <soapenv:Header />
+  <soapenv:Body><ser:getBatchData>
+  <batch>
+    <installationCode>STGMil14</installationCode>
+    <instructionSeqNo>74048</instructionSeqNo>
+  </batch>
+</ser:getBatchData></soapenv:Body>
+</soapenv:Envelope>
+2019-10-15 15:06:18,625 31612 [main] DEBUG c.s.m.b.service.MajescoSOAPService - Majesco BATCH Response:
+<wslite.http.HTTPResponse@542e560f expiration=Wed Dec 31 18:00:00 CST 1969 statusMessage=OK charset=UTF-8 date=Tue Oct 15 15:06:15 CDT 2019 contentLength=594 lastModified=Wed Dec 31 18:00:00 CST 1969 url=https://mbsu.shelterinsurance.com:8743/jbeamicd?wsdl statusCode=200 headers={=HTTP/1.1 200 OK, Access-Control-Allow-Credentials=include, Access-Control-Allow-Headers=origin, content-type, accept, authorization, Access-Control-Allow-Methods=GET, POST, PUT, DELETE, OPTIONS, HEAD, Access-Control-Allow-Origin=*, Access-Control-Max-Age=1209600, Connection=close, Content-Length=594, Content-Type=text/xml;charset=UTF-8, Date=Tue, 15 Oct 2019 20:06:15 GMT} contentEncoding=null contentType=text/xml>
+2019-10-15 15:06:18,630 31617 [main] DEBUG c.s.m.b.service.MajescoSOAPService - Response Body:
+<?xml version="1.0" encoding="UTF-8"?><soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <ns2:getBatchDataResponse xmlns:ns2="http://services.server.ws.monitor.stgmastek.com/">
+      <return>
+        <responseTime>1571169975286</responseTime>
+        <responseType>OK</responseType>
+        <batchDetails>
+          <batchName>UNIT BATCH</batchName>
+          <batchNo>52973</batchNo>
+          <batchRevNo>1</batchRevNo>
+          <batchStartUser>batchadmin</batchStartUser>
+          <batchType>DATE</batchType>
+          <execStartTime>1571169963748</execStartTime>
+          <failedOver>N</failedOver>
+          <processId>496057</processId>
+        </batchDetails>
+      </return>
+    </ns2:getBatchDataResponse>
+  </soap:Body>
+</soap:Envelope>
+
+2019-10-15 15:06:18,730 31717 [main] DEBUG c.s.m.b.service.MajescoSOAPService - Majesco BATCH endpoint: https://mbsu.shelterinsurance.com:8743/jbeamicd?wsdl
+2019-10-15 15:06:18,732 31719 [main] DEBUG c.s.m.b.service.MajescoSOAPService - Majesco BATCH Request:
+<wslite.http.HTTPRequest@59f63e24 sslTrustAllCerts=false proxy=null useCaches=false followRedirects=true sslTrustStoreFile=null url=https://mbsu.shelterinsurance.com:8743/jbeamicd?wsdl headers={Content-Type=text/xml; charset=UTF-8} readTimeout=1200000 connectTimeout=600000 method=POST>
+2019-10-15 15:06:18,733 31720 [main] DEBUG c.s.m.b.service.MajescoSOAPService - Request Body:
+<?xml version='1.0' encoding='UTF-8'?>
+<soapenv:Envelope xmlns:soapenv='http://schemas.xmlsoap.org/soap/envelope/' xmlns:ser='http://services.server.ws.monitor.stgmastek.com/'>
+  <soapenv:Header />
+  <soapenv:Body><ser:getBatchCompletedData>
+  <searchBatch>
+    <batchNo>52973</batchNo>
+    <installationCode>STGMil14</installationCode>
+  </searchBatch>
+</ser:getBatchCompletedData></soapenv:Body>
+</soapenv:Envelope>
+2019-10-15 15:06:18,734 31721 [main] DEBUG c.s.m.b.service.MajescoSOAPService - Majesco BATCH Response:
+<wslite.http.HTTPResponse@67c2e933 expiration=Wed Dec 31 18:00:00 CST 1969 statusMessage=OK charset=UTF-8 date=Tue Oct 15 15:06:15 CDT 2019 contentLength=331 lastModified=Wed Dec 31 18:00:00 CST 1969 url=https://mbsu.shelterinsurance.com:8743/jbeamicd?wsdl statusCode=200 headers={=HTTP/1.1 200 OK, Access-Control-Allow-Credentials=include, Access-Control-Allow-Headers=origin, content-type, accept, authorization, Access-Control-Allow-Methods=GET, POST, PUT, DELETE, OPTIONS, HEAD, Access-Control-Allow-Origin=*, Access-Control-Max-Age=1209600, Connection=close, Content-Length=331, Content-Type=text/xml;charset=UTF-8, Date=Tue, 15 Oct 2019 20:06:15 GMT} contentEncoding=null contentType=text/xml>
+2019-10-15 15:06:18,736 31723 [main] DEBUG c.s.m.b.service.MajescoSOAPService - Response Body:
+<?xml version="1.0" encoding="UTF-8"?><soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <ns2:getBatchCompletedDataResponse xmlns:ns2="http://services.server.ws.monitor.stgmastek.com/">
+      <return>
+        <responseTime>1571169975405</responseTime>
+        <responseType>OK</responseType>
+      </return>
+    </ns2:getBatchCompletedDataResponse>
+  </soap:Body>
+</soap:Envelope>
+
+2019-10-15 15:06:18,746 31733 [main] DEBUG c.s.m.b.tasklet.StartBatchTasklet - checking for BatchCompletedData - count: 1
+2019-10-15 15:06:48,750 61737 [main] DEBUG c.s.m.b.tasklet.StartBatchTasklet - waited for 30 second
+2019-10-15 15:06:48,807 61794 [main] DEBUG c.s.m.b.service.MajescoSOAPService - Majesco BATCH endpoint: https://mbsu.shelterinsurance.com:8743/jbeamicd?wsdl
+2019-10-15 15:06:48,808 61795 [main] DEBUG c.s.m.b.service.MajescoSOAPService - Majesco BATCH Request:
+<wslite.http.HTTPRequest@18920cc sslTrustAllCerts=false proxy=null useCaches=false followRedirects=true sslTrustStoreFile=null url=https://mbsu.shelterinsurance.com:8743/jbeamicd?wsdl headers={Content-Type=text/xml; charset=UTF-8} readTimeout=1200000 connectTimeout=600000 method=POST>
+2019-10-15 15:06:48,809 61796 [main] DEBUG c.s.m.b.service.MajescoSOAPService - Request Body:
+<?xml version='1.0' encoding='UTF-8'?>
+<soapenv:Envelope xmlns:soapenv='http://schemas.xmlsoap.org/soap/envelope/' xmlns:ser='http://services.server.ws.monitor.stgmastek.com/'>
+  <soapenv:Header />
+  <soapenv:Body><ser:getBatchCompletedData>
+  <searchBatch>
+    <batchNo>52973</batchNo>
+    <installationCode>STGMil14</installationCode>
+  </searchBatch>
+</ser:getBatchCompletedData></soapenv:Body>
+</soapenv:Envelope>
+2019-10-15 15:06:48,810 61797 [main] DEBUG c.s.m.b.service.MajescoSOAPService - Majesco BATCH Response:
+<wslite.http.HTTPResponse@2807bdeb expiration=Wed Dec 31 18:00:00 CST 1969 statusMessage=OK charset=UTF-8 date=Tue Oct 15 15:06:45 CDT 2019 contentLength=331 lastModified=Wed Dec 31 18:00:00 CST 1969 url=https://mbsu.shelterinsurance.com:8743/jbeamicd?wsdl statusCode=200 headers={=HTTP/1.1 200 OK, Access-Control-Allow-Credentials=include, Access-Control-Allow-Headers=origin, content-type, accept, authorization, Access-Control-Allow-Methods=GET, POST, PUT, DELETE, OPTIONS, HEAD, Access-Control-Allow-Origin=*, Access-Control-Max-Age=1209600, Connection=close, Content-Length=331, Content-Type=text/xml;charset=UTF-8, Date=Tue, 15 Oct 2019 20:06:45 GMT} contentEncoding=null contentType=text/xml>
+2019-10-15 15:06:48,812 61799 [main] DEBUG c.s.m.b.service.MajescoSOAPService - Response Body:
+<?xml version="1.0" encoding="UTF-8"?><soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <ns2:getBatchCompletedDataResponse xmlns:ns2="http://services.server.ws.monitor.stgmastek.com/">
+      <return>
+        <responseTime>1571170005480</responseTime>
+        <responseType>OK</responseType>
+      </return>
+    </ns2:getBatchCompletedDataResponse>
+  </soap:Body>
+</soap:Envelope>
+
+2019-10-15 15:06:48,816 61803 [main] DEBUG c.s.m.b.tasklet.StartBatchTasklet - checking for BatchCompletedData - count: 2
+2019-10-15 15:07:18,819 91806 [main] DEBUG c.s.m.b.tasklet.StartBatchTasklet - waited for 30 second
+2019-10-15 15:07:18,917 91904 [main] DEBUG c.s.m.b.service.MajescoSOAPService - Majesco BATCH endpoint: https://mbsu.shelterinsurance.com:8743/jbeamicd?wsdl
+2019-10-15 15:07:18,922 91909 [main] DEBUG c.s.m.b.service.MajescoSOAPService - Majesco BATCH Request:
+<wslite.http.HTTPRequest@2002348 sslTrustAllCerts=false proxy=null useCaches=false followRedirects=true sslTrustStoreFile=null url=https://mbsu.shelterinsurance.com:8743/jbeamicd?wsdl headers={Content-Type=text/xml; charset=UTF-8} readTimeout=1200000 connectTimeout=600000 method=POST>
+2019-10-15 15:07:18,924 91911 [main] DEBUG c.s.m.b.service.MajescoSOAPService - Request Body:
+<?xml version='1.0' encoding='UTF-8'?>
+<soapenv:Envelope xmlns:soapenv='http://schemas.xmlsoap.org/soap/envelope/' xmlns:ser='http://services.server.ws.monitor.stgmastek.com/'>
+  <soapenv:Header />
+  <soapenv:Body><ser:getBatchCompletedData>
+  <searchBatch>
+    <batchNo>52973</batchNo>
+    <installationCode>STGMil14</installationCode>
+  </searchBatch>
+</ser:getBatchCompletedData></soapenv:Body>
+</soapenv:Envelope>
+2019-10-15 15:07:18,925 91912 [main] DEBUG c.s.m.b.service.MajescoSOAPService - Majesco BATCH Response:
+<wslite.http.HTTPResponse@1d470d0 expiration=Wed Dec 31 18:00:00 CST 1969 statusMessage=OK charset=UTF-8 date=Tue Oct 15 15:07:15 CDT 2019 contentLength=639 lastModified=Wed Dec 31 18:00:00 CST 1969 url=https://mbsu.shelterinsurance.com:8743/jbeamicd?wsdl statusCode=200 headers={=HTTP/1.1 200 OK, Access-Control-Allow-Credentials=include, Access-Control-Allow-Headers=origin, content-type, accept, authorization, Access-Control-Allow-Methods=GET, POST, PUT, DELETE, OPTIONS, HEAD, Access-Control-Allow-Origin=*, Access-Control-Max-Age=1209600, Connection=close, Content-Length=639, Content-Type=text/xml;charset=UTF-8, Date=Tue, 15 Oct 2019 20:07:15 GMT} contentEncoding=null contentType=text/xml>
+2019-10-15 15:07:18,928 91915 [main] DEBUG c.s.m.b.service.MajescoSOAPService - Response Body:
+<?xml version="1.0" encoding="UTF-8"?><soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <ns2:getBatchCompletedDataResponse xmlns:ns2="http://services.server.ws.monitor.stgmastek.com/">
+      <return>
+        <responseTime>1571170035585</responseTime>
+        <responseType>OK</responseType>
+        <batchDetailsList>
+          <batchEndReason>BATCH_COMPLETED</batchEndReason>
+          <batchName>UNIT BATCH</batchName>
+          <batchNo>52973</batchNo>
+          <batchRevNo>1</batchRevNo>
+          <batchType>DATE</batchType>
+          <execEndTime>1571170031831</execEndTime>
+          <execStartTime>1571169963748</execStartTime>
+          <processId>496057</processId>
+        </batchDetailsList>
+      </return>
+    </ns2:getBatchCompletedDataResponse>
+  </soap:Body>
+</soap:Envelope>
+
+2019-10-15 15:07:19,006 91993 [main] DEBUG c.s.m.b.service.MajescoSOAPService - Majesco BATCH endpoint: https://mbsu.shelterinsurance.com:8743/jbeamicd?wsdl
+2019-10-15 15:07:19,008 91995 [main] DEBUG c.s.m.b.service.MajescoSOAPService - Majesco BATCH Request:
+<wslite.http.HTTPRequest@57ea113a sslTrustAllCerts=false proxy=null useCaches=false followRedirects=true sslTrustStoreFile=null url=https://mbsu.shelterinsurance.com:8743/jbeamicd?wsdl headers={Content-Type=text/xml; charset=UTF-8} readTimeout=1200000 connectTimeout=600000 method=POST>
+2019-10-15 15:07:19,009 91996 [main] DEBUG c.s.m.b.service.MajescoSOAPService - Request Body:
+<?xml version='1.0' encoding='UTF-8'?>
+<soapenv:Envelope xmlns:soapenv='http://schemas.xmlsoap.org/soap/envelope/' xmlns:ser='http://services.server.ws.monitor.stgmastek.com/'>
+  <soapenv:Header />
+  <soapenv:Body><ser:getBatchInfo>
+  <batch>
+    <batchNo>52973</batchNo>
+    <batchRevNo>1</batchRevNo>
+    <installationCode>STGMil14</installationCode>
+  </batch>
+</ser:getBatchInfo></soapenv:Body>
+</soapenv:Envelope>
+2019-10-15 15:07:19,010 91997 [main] DEBUG c.s.m.b.service.MajescoSOAPService - Majesco BATCH Response:
+<wslite.http.HTTPResponse@acdb094 expiration=Wed Dec 31 18:00:00 CST 1969 statusMessage=OK charset=UTF-8 date=Tue Oct 15 15:07:15 CDT 2019 contentLength=2186 lastModified=Wed Dec 31 18:00:00 CST 1969 url=https://mbsu.shelterinsurance.com:8743/jbeamicd?wsdl statusCode=200 headers={=HTTP/1.1 200 OK, Access-Control-Allow-Credentials=include, Access-Control-Allow-Headers=origin, content-type, accept, authorization, Access-Control-Allow-Methods=GET, POST, PUT, DELETE, OPTIONS, HEAD, Access-Control-Allow-Origin=*, Access-Control-Max-Age=1209600, Connection=close, Content-Encoding=gzip, Content-Length=2186, Content-Type=text/xml;charset=UTF-8, Date=Tue, 15 Oct 2019 20:07:15 GMT, Vary=Accept-Encoding} contentEncoding=gzip contentType=text/xml>
+2019-10-15 15:07:19,017 92004 [main] DEBUG c.s.m.b.service.MajescoSOAPService - Response Body:
+<?xml version="1.0" encoding="UTF-8"?><soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <ns2:getBatchInfoResponse xmlns:ns2="http://services.server.ws.monitor.stgmastek.com/">
+      <return>
+        <responseTime>1571170035667</responseTime>
+        <responseType>OK</responseType>
+        <batchDataList>
+          <batchEndReason>BATCH_COMPLETED</batchEndReason>
+          <batchNo>52973</batchNo>
+          <batchRevNo>1</batchRevNo>
+          <batchTimeDiff>00:01:68</batchTimeDiff>
+          <entityList>
+            <description>Enter the priority code 1 to execute all PRE events associated with it.</description>
+            <entity>PRE</entity>
+            <installationCode>STGMil14</installationCode>
+            <lookupColumn>PRE_POST</lookupColumn>
+            <lookupValue>PRE</lookupValue>
+            <numberOfRequiredParameters>1</numberOfRequiredParameters>
+            <precedenceOrder>1</precedenceOrder>
+            <valueColumn>PRIORITY_CODE_1</valueColumn>
+          </entityList>
+          <entityList>
+            <description>Enter the ACCOUNT_SYSTEM_CODE.</description>
+            <entity>ACCOUNT</entity>
+            <installationCode>STGMil14</installationCode>
+            <lookupColumn>BATCH_TYPE</lookupColumn>
+            <lookupValue>ACCOUNT_NIGHT</lookupValue>
+            <numberOfRequiredParameters>1</numberOfRequiredParameters>
+            <onErrorFailAll>Y</onErrorFailAll>
+            <precedenceOrder>2</precedenceOrder>
+            <valueColumn>ACCOUNT_SYSTEM_CODE</valueColumn>
+          </entityList>
+          <entityList>
+            <description>Enter the POLICY_ID</description>
+            <entity>POLICY</entity>
+            <installationCode>STGMil14</installationCode>
+            <lookupColumn>BATCH_TYPE</lookupColumn>
+            <lookupValue>POLICY_NIGHT</lookupValue>
+            <numberOfRequiredParameters>1</numberOfRequiredParameters>
+            <onErrorFailAll>Y</onErrorFailAll>
+            <precedenceOrder>3</precedenceOrder>
+            <valueColumn>POLICY_ID</valueColumn>
+          </entityList>
+          <entityList>
+            <description>Enter the BROKER_SYSTEM_CODE.</description>
+            <entity>BROKER</entity>
+            <installationCode>STGMil14</installationCode>
+            <lookupColumn>ENTITY_GROUP</lookupColumn>
+            <lookupValue>BROKER</lookupValue>
+            <numberOfRequiredParameters>1</numberOfRequiredParameters>
+            <onErrorFailAll>Y</onErrorFailAll>
+            <precedenceOrder>6</precedenceOrder>
+            <valueColumn>BROKER_SYSTEM_CODE</valueColumn>
+          </entityList>
+          <entityList>
+            <description>Enter the job sequence number</description>
+            <entity>GENERAL</entity>
+            <installationCode>STGMil14</installationCode>
+            <lookupColumn>JOB_NAME</lookupColumn>
+            <lookupValue>RELEASE_BATCH</lookupValue>
+            <numberOfRequiredParameters>1</numberOfRequiredParameters>
+            <precedenceOrder>7</precedenceOrder>
+            <valueColumn>JOB_SEQ</valueColumn>
+          </entityList>
+          <entityList>
+            <entity>DAY_BATCH_ACCOUNT</entity>
+            <installationCode>STGMil14</installationCode>
+            <lookupColumn>BATCH_TYPE</lookupColumn>
+            <lookupValue>ACCOUNT_DAY</lookupValue>
+            <numberOfRequiredParameters>1</numberOfRequiredParameters>
+            <onErrorFailAll>Y</onErrorFailAll>
+            <precedenceOrder>997</precedenceOrder>
+            <valueColumn>ACCOUNT_SYSTEM_CODE</valueColumn>
+          </entityList>
+          <entityList>
+            <description>Enter the POLICY_ID</description>
+            <entity>DAY_BATCH_POLICY</entity>
+            <installationCode>STGMil14</installationCode>
+            <lookupColumn>BATCH_TYPE</lookupColumn>
+            <lookupValue>POLICY_DAY</lookupValue>
+            <numberOfRequiredParameters>1</numberOfRequiredParameters>
+            <onErrorFailAll>Y</onErrorFailAll>
+            <precedenceOrder>998</precedenceOrder>
+            <valueColumn>POLICY_ID</valueColumn>
+          </entityList>
+          <entityList>
+            <description>Enter the priority code 1 to execute the POST jobs associated with it</description>
+            <entity>POST</entity>
+            <installationCode>STGMil14</installationCode>
+            <lookupColumn>PRE_POST</lookupColumn>
+            <lookupValue>POST</lookupValue>
+            <numberOfRequiredParameters>1</numberOfRequiredParameters>
+            <precedenceOrder>999</precedenceOrder>
+            <valueColumn>PRIORITY_CODE_1</valueColumn>
+          </entityList>
+          <execEndTime>1571170031831</execEndTime>
+          <execStartTime>1571169963748</execStartTime>
+          <noOfListners>5</noOfListners>
+          <noOfObjects>37</noOfObjects>
+          <noOfObjectsExecuted>37</noOfObjectsExecuted>
+          <noOfObjectsFailed>0</noOfObjectsFailed>
+          <noOfObjectsSkipped>0</noOfObjectsSkipped>
+          <progressLevelDataList>
+            <batchNo>52973</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>0</cycleNo>
+            <endDatetime>1571170031838</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>68</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>CLOSURE</prgActivityType>
+            <startDatetime>1571170031828</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52973</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>14</cycleNo>
+            <endDatetime>1571170031569</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>67</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>EXECUTION</prgActivityType>
+            <prgLevelType>POST</prgLevelType>
+            <startDatetime>1571170027880</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52973</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>14</cycleNo>
+            <endDatetime>1571170027879</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>66</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>SCHEDULING</prgActivityType>
+            <prgLevelType>POST</prgLevelType>
+            <startDatetime>1571170027873</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52973</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>14</cycleNo>
+            <endDatetime>1571170027872</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>65</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>ASSIGNMENT</prgActivityType>
+            <prgLevelType>POST</prgLevelType>
+            <startDatetime>1571170027589</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52973</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>13</cycleNo>
+            <endDatetime>1571170027044</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>64</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>EXECUTION</prgActivityType>
+            <prgLevelType>POST</prgLevelType>
+            <startDatetime>1571170025789</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52973</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>13</cycleNo>
+            <endDatetime>1571170025788</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>63</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>SCHEDULING</prgActivityType>
+            <prgLevelType>POST</prgLevelType>
+            <startDatetime>1571170025784</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52973</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>13</cycleNo>
+            <endDatetime>1571170025783</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>62</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>ASSIGNMENT</prgActivityType>
+            <prgLevelType>POST</prgLevelType>
+            <startDatetime>1571170025502</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52973</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>12</cycleNo>
+            <endDatetime>1571170024958</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>61</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>EXECUTION</prgActivityType>
+            <prgLevelType>POST</prgLevelType>
+            <startDatetime>1571170023843</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52973</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>12</cycleNo>
+            <endDatetime>1571170023842</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>60</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>SCHEDULING</prgActivityType>
+            <prgLevelType>POST</prgLevelType>
+            <startDatetime>1571170023837</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52973</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>12</cycleNo>
+            <endDatetime>1571170023836</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>59</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>ASSIGNMENT</prgActivityType>
+            <prgLevelType>POST</prgLevelType>
+            <startDatetime>1571170023557</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52973</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>11</cycleNo>
+            <endDatetime>1571170022989</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>58</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>EXECUTION</prgActivityType>
+            <prgLevelType>POST</prgLevelType>
+            <startDatetime>1571170021520</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52973</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>11</cycleNo>
+            <endDatetime>1571170021519</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>57</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>SCHEDULING</prgActivityType>
+            <prgLevelType>POST</prgLevelType>
+            <startDatetime>1571170021513</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52973</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>11</cycleNo>
+            <endDatetime>1571170021511</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>56</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>ASSIGNMENT</prgActivityType>
+            <prgLevelType>POST</prgLevelType>
+            <startDatetime>1571170021216</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52973</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>10</cycleNo>
+            <endDatetime>1571170020592</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>55</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>EXECUTION</prgActivityType>
+            <prgLevelType>POST</prgLevelType>
+            <startDatetime>1571170019516</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52973</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>10</cycleNo>
+            <endDatetime>1571170019514</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>54</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>SCHEDULING</prgActivityType>
+            <prgLevelType>POST</prgLevelType>
+            <startDatetime>1571170019511</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52973</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>10</cycleNo>
+            <endDatetime>1571170019509</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>53</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>ASSIGNMENT</prgActivityType>
+            <prgLevelType>POST</prgLevelType>
+            <startDatetime>1571170019246</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52973</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>9</cycleNo>
+            <endDatetime>1571170018708</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>52</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>EXECUTION</prgActivityType>
+            <prgLevelType>POST</prgLevelType>
+            <startDatetime>1571170016257</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52973</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>9</cycleNo>
+            <endDatetime>1571170016256</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>51</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>SCHEDULING</prgActivityType>
+            <prgLevelType>POST</prgLevelType>
+            <startDatetime>1571170016251</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52973</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>9</cycleNo>
+            <endDatetime>1571170016249</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>50</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>ASSIGNMENT</prgActivityType>
+            <prgLevelType>POST</prgLevelType>
+            <startDatetime>1571170015989</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52973</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>8</cycleNo>
+            <endDatetime>1571170015436</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>49</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>EXECUTION</prgActivityType>
+            <prgLevelType>POST</prgLevelType>
+            <startDatetime>1571170014367</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52973</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>8</cycleNo>
+            <endDatetime>1571170014366</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>48</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>SCHEDULING</prgActivityType>
+            <prgLevelType>POST</prgLevelType>
+            <startDatetime>1571170014362</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52973</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>8</cycleNo>
+            <endDatetime>1571170014361</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>47</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>ASSIGNMENT</prgActivityType>
+            <prgLevelType>POST</prgLevelType>
+            <startDatetime>1571170014099</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52973</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>7</cycleNo>
+            <endDatetime>1571170013549</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>46</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>EXECUTION</prgActivityType>
+            <prgLevelType>POST</prgLevelType>
+            <startDatetime>1571170011776</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52973</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>7</cycleNo>
+            <endDatetime>1571170011774</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>45</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>SCHEDULING</prgActivityType>
+            <prgLevelType>POST</prgLevelType>
+            <startDatetime>1571170011770</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52973</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>7</cycleNo>
+            <endDatetime>1571170011769</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>44</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>ASSIGNMENT</prgActivityType>
+            <prgLevelType>POST</prgLevelType>
+            <startDatetime>1571170011476</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52973</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>6</cycleNo>
+            <endDatetime>1571170010960</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>43</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>EXECUTION</prgActivityType>
+            <prgLevelType>POST</prgLevelType>
+            <startDatetime>1571170009657</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52973</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>6</cycleNo>
+            <endDatetime>1571170009656</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>42</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>SCHEDULING</prgActivityType>
+            <prgLevelType>POST</prgLevelType>
+            <startDatetime>1571170009651</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52973</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>6</cycleNo>
+            <endDatetime>1571170009650</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>41</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>ASSIGNMENT</prgActivityType>
+            <prgLevelType>POST</prgLevelType>
+            <startDatetime>1571170009369</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52973</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>5</cycleNo>
+            <endDatetime>1571170008837</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>40</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>EXECUTION</prgActivityType>
+            <prgLevelType>POST</prgLevelType>
+            <startDatetime>1571170007524</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52973</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>5</cycleNo>
+            <endDatetime>1571170007522</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>39</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>SCHEDULING</prgActivityType>
+            <prgLevelType>POST</prgLevelType>
+            <startDatetime>1571170007518</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52973</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>5</cycleNo>
+            <endDatetime>1571170007516</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>38</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>ASSIGNMENT</prgActivityType>
+            <prgLevelType>POST</prgLevelType>
+            <startDatetime>1571170007231</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52973</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>4</cycleNo>
+            <endDatetime>1571170006697</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>37</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>EXECUTION</prgActivityType>
+            <prgLevelType>POST</prgLevelType>
+            <startDatetime>1571170005465</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52973</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>4</cycleNo>
+            <endDatetime>1571170005463</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>36</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>SCHEDULING</prgActivityType>
+            <prgLevelType>POST</prgLevelType>
+            <startDatetime>1571170005459</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52973</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>4</cycleNo>
+            <endDatetime>1571170005458</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>35</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>ASSIGNMENT</prgActivityType>
+            <prgLevelType>POST</prgLevelType>
+            <startDatetime>1571170005176</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52973</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>3</cycleNo>
+            <endDatetime>1571170004661</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>34</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>EXECUTION</prgActivityType>
+            <prgLevelType>POST</prgLevelType>
+            <startDatetime>1571170003194</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52973</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>3</cycleNo>
+            <endDatetime>1571170003192</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>33</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>SCHEDULING</prgActivityType>
+            <prgLevelType>POST</prgLevelType>
+            <startDatetime>1571170003188</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52973</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>3</cycleNo>
+            <endDatetime>1571170003187</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>32</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>ASSIGNMENT</prgActivityType>
+            <prgLevelType>POST</prgLevelType>
+            <startDatetime>1571170002900</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52973</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>2</cycleNo>
+            <endDatetime>1571170002381</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>31</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>EXECUTION</prgActivityType>
+            <prgLevelType>POST</prgLevelType>
+            <startDatetime>1571170001177</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52973</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>2</cycleNo>
+            <endDatetime>1571170001176</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>30</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>SCHEDULING</prgActivityType>
+            <prgLevelType>POST</prgLevelType>
+            <startDatetime>1571170001171</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52973</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>2</cycleNo>
+            <endDatetime>1571170001170</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>29</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>ASSIGNMENT</prgActivityType>
+            <prgLevelType>POST</prgLevelType>
+            <startDatetime>1571170000889</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52973</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>1</cycleNo>
+            <endDatetime>1571170000376</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>28</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>EXECUTION</prgActivityType>
+            <prgLevelType>POST</prgLevelType>
+            <startDatetime>1571169999256</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52973</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>1</cycleNo>
+            <endDatetime>1571169999255</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>27</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>SCHEDULING</prgActivityType>
+            <prgLevelType>POST</prgLevelType>
+            <startDatetime>1571169999251</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52973</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>1</cycleNo>
+            <endDatetime>1571169999249</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>26</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>ASSIGNMENT</prgActivityType>
+            <prgLevelType>POST</prgLevelType>
+            <startDatetime>1571169998983</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52973</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>0</cycleNo>
+            <endDatetime>1571169998426</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>25</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>PROCREATION</prgActivityType>
+            <prgLevelType>POST</prgLevelType>
+            <startDatetime>1571169998311</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52973</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>1</cycleNo>
+            <endDatetime>1571169998290</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>24</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>EXECUTION</prgActivityType>
+            <prgLevelType>POLICY</prgLevelType>
+            <startDatetime>1571169997464</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52973</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>1</cycleNo>
+            <endDatetime>1571169997462</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>23</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>SCHEDULING</prgActivityType>
+            <prgLevelType>POLICY</prgLevelType>
+            <startDatetime>1571169997455</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52973</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>1</cycleNo>
+            <endDatetime>1571169997454</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>22</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>ASSIGNMENT</prgActivityType>
+            <prgLevelType>POLICY</prgLevelType>
+            <startDatetime>1571169997440</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52973</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>6</cycleNo>
+            <endDatetime>1571169997147</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>21</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>EXECUTION</prgActivityType>
+            <prgLevelType>PRE</prgLevelType>
+            <startDatetime>1571169975745</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52973</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>6</cycleNo>
+            <endDatetime>1571169975743</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>20</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>SCHEDULING</prgActivityType>
+            <prgLevelType>PRE</prgLevelType>
+            <startDatetime>1571169975739</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52973</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>6</cycleNo>
+            <endDatetime>1571169975738</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>19</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>ASSIGNMENT</prgActivityType>
+            <prgLevelType>PRE</prgLevelType>
+            <startDatetime>1571169975446</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52973</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>5</cycleNo>
+            <endDatetime>1571169974904</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>18</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>EXECUTION</prgActivityType>
+            <prgLevelType>PRE</prgLevelType>
+            <startDatetime>1571169973595</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52973</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>5</cycleNo>
+            <endDatetime>1571169973593</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>17</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>SCHEDULING</prgActivityType>
+            <prgLevelType>PRE</prgLevelType>
+            <startDatetime>1571169973588</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52973</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>5</cycleNo>
+            <endDatetime>1571169973585</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>16</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>ASSIGNMENT</prgActivityType>
+            <prgLevelType>PRE</prgLevelType>
+            <startDatetime>1571169973281</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52973</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>4</cycleNo>
+            <endDatetime>1571169972723</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>15</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>EXECUTION</prgActivityType>
+            <prgLevelType>PRE</prgLevelType>
+            <startDatetime>1571169971458</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52973</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>4</cycleNo>
+            <endDatetime>1571169971457</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>14</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>SCHEDULING</prgActivityType>
+            <prgLevelType>PRE</prgLevelType>
+            <startDatetime>1571169971454</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52973</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>4</cycleNo>
+            <endDatetime>1571169971453</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>13</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>ASSIGNMENT</prgActivityType>
+            <prgLevelType>PRE</prgLevelType>
+            <startDatetime>1571169971148</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52973</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>3</cycleNo>
+            <endDatetime>1571169970553</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>12</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>EXECUTION</prgActivityType>
+            <prgLevelType>PRE</prgLevelType>
+            <startDatetime>1571169969213</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52973</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>3</cycleNo>
+            <endDatetime>1571169969211</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>11</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>SCHEDULING</prgActivityType>
+            <prgLevelType>PRE</prgLevelType>
+            <startDatetime>1571169969206</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52973</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>3</cycleNo>
+            <endDatetime>1571169969205</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>10</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>ASSIGNMENT</prgActivityType>
+            <prgLevelType>PRE</prgLevelType>
+            <startDatetime>1571169968918</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52973</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>2</cycleNo>
+            <endDatetime>1571169968387</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>9</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>EXECUTION</prgActivityType>
+            <prgLevelType>PRE</prgLevelType>
+            <startDatetime>1571169967062</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52973</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>2</cycleNo>
+            <endDatetime>1571169967061</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>8</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>SCHEDULING</prgActivityType>
+            <prgLevelType>PRE</prgLevelType>
+            <startDatetime>1571169967057</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52973</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>2</cycleNo>
+            <endDatetime>1571169967056</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>7</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>ASSIGNMENT</prgActivityType>
+            <prgLevelType>PRE</prgLevelType>
+            <startDatetime>1571169966764</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52973</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>1</cycleNo>
+            <endDatetime>1571169966249</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>6</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>EXECUTION</prgActivityType>
+            <prgLevelType>PRE</prgLevelType>
+            <startDatetime>1571169964892</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52973</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>1</cycleNo>
+            <endDatetime>1571169964890</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>5</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>SCHEDULING</prgActivityType>
+            <prgLevelType>PRE</prgLevelType>
+            <startDatetime>1571169964886</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52973</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>1</cycleNo>
+            <endDatetime>1571169964885</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>4</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>ASSIGNMENT</prgActivityType>
+            <prgLevelType>PRE</prgLevelType>
+            <startDatetime>1571169964601</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52973</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>0</cycleNo>
+            <endDatetime>1571169964101</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>3</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>PROCREATION</prgActivityType>
+            <prgLevelType>PRE</prgLevelType>
+            <startDatetime>1571169963999</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52973</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>0</cycleNo>
+            <endDatetime>1571169963871</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>2</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>EXECUTION_ORDER</prgActivityType>
+            <startDatetime>1571169963865</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52973</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>0</cycleNo>
+            <endDatetime>1571169963863</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>1</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>INITIALIZATION</prgActivityType>
+            <startDatetime>1571169963770</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+        </batchDataList>
+      </return>
+    </ns2:getBatchInfoResponse>
+  </soap:Body>
+</soap:Envelope>
+
+2019-10-15 15:07:19,092 92079 [main] DEBUG c.s.m.b.service.MajescoSOAPService - Majesco BATCH endpoint: https://mbsu.shelterinsurance.com:8743/jbeamicd?wsdl
+2019-10-15 15:07:19,095 92082 [main] DEBUG c.s.m.b.service.MajescoSOAPService - Majesco BATCH Request:
+<wslite.http.HTTPRequest@1d131e1b sslTrustAllCerts=false proxy=null useCaches=false followRedirects=true sslTrustStoreFile=null url=https://mbsu.shelterinsurance.com:8743/jbeamicd?wsdl headers={Content-Type=text/xml; charset=UTF-8} readTimeout=1200000 connectTimeout=600000 method=POST>
+2019-10-15 15:07:19,096 92083 [main] DEBUG c.s.m.b.service.MajescoSOAPService - Request Body:
+<?xml version='1.0' encoding='UTF-8'?>
+<soapenv:Envelope xmlns:soapenv='http://schemas.xmlsoap.org/soap/envelope/' xmlns:ser='http://services.server.ws.monitor.stgmastek.com/'>
+  <soapenv:Header />
+  <soapenv:Body><ser:getBatchObjectDetails>
+  <reqBatchDetails>
+    <batchNo>52973</batchNo>
+    <batchRevNo>1</batchRevNo>
+    <installationCode>STGMil14</installationCode>
+    <cycleNo>1</cycleNo>
+    <prePost>PRE</prePost>
+  </reqBatchDetails>
+</ser:getBatchObjectDetails></soapenv:Body>
+</soapenv:Envelope>
+2019-10-15 15:07:19,098 92085 [main] DEBUG c.s.m.b.service.MajescoSOAPService - Majesco BATCH Response:
+<wslite.http.HTTPResponse@3a393455 expiration=Wed Dec 31 18:00:00 CST 1969 statusMessage=OK charset=UTF-8 date=Tue Oct 15 15:07:15 CDT 2019 contentLength=603 lastModified=Wed Dec 31 18:00:00 CST 1969 url=https://mbsu.shelterinsurance.com:8743/jbeamicd?wsdl statusCode=200 headers={=HTTP/1.1 200 OK, Access-Control-Allow-Credentials=include, Access-Control-Allow-Headers=origin, content-type, accept, authorization, Access-Control-Allow-Methods=GET, POST, PUT, DELETE, OPTIONS, HEAD, Access-Control-Allow-Origin=*, Access-Control-Max-Age=1209600, Connection=close, Content-Length=603, Content-Type=text/xml;charset=UTF-8, Date=Tue, 15 Oct 2019 20:07:15 GMT} contentEncoding=null contentType=text/xml>
+2019-10-15 15:07:19,100 92087 [main] DEBUG c.s.m.b.service.MajescoSOAPService - Response Body:
+<?xml version="1.0" encoding="UTF-8"?><soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <ns2:getBatchObjectDetailsResponse xmlns:ns2="http://services.server.ws.monitor.stgmastek.com/">
+      <return>
+        <responseTime>1571170035762</responseTime>
+        <responseType>OK</responseType>
+        <batchObjectList>
+          <beSeqNo>2489411</beSeqNo>
+          <objExecEndTime>1571169966246</objExecEndTime>
+          <objExecStartTime>1571169966186</objExecStartTime>
+          <status>Completed</status>
+          <taskName>REFRESH_BUSINESS_DAY - Refresh Business Day</taskName>
+          <timeTaken>60</timeTaken>
+        </batchObjectList>
+      </return>
+    </ns2:getBatchObjectDetailsResponse>
+  </soap:Body>
+</soap:Envelope>
+
+2019-10-15 15:07:19,150 92137 [main] DEBUG c.s.m.b.service.MajescoSOAPService - Majesco BATCH endpoint: https://mbsu.shelterinsurance.com:8743/jbeamicd?wsdl
+2019-10-15 15:07:19,155 92142 [main] DEBUG c.s.m.b.service.MajescoSOAPService - Majesco BATCH Request:
+<wslite.http.HTTPRequest@4b2a01d4 sslTrustAllCerts=false proxy=null useCaches=false followRedirects=true sslTrustStoreFile=null url=https://mbsu.shelterinsurance.com:8743/jbeamicd?wsdl headers={Content-Type=text/xml; charset=UTF-8} readTimeout=1200000 connectTimeout=600000 method=POST>
+2019-10-15 15:07:19,157 92144 [main] DEBUG c.s.m.b.service.MajescoSOAPService - Request Body:
+<?xml version='1.0' encoding='UTF-8'?>
+<soapenv:Envelope xmlns:soapenv='http://schemas.xmlsoap.org/soap/envelope/' xmlns:ser='http://services.server.ws.monitor.stgmastek.com/'>
+  <soapenv:Header />
+  <soapenv:Body><ser:getBatchObjectDetails>
+  <reqBatchDetails>
+    <batchNo>52973</batchNo>
+    <batchRevNo>1</batchRevNo>
+    <installationCode>STGMil14</installationCode>
+    <cycleNo>1</cycleNo>
+    <prePost>POLICY</prePost>
+  </reqBatchDetails>
+</ser:getBatchObjectDetails></soapenv:Body>
+</soapenv:Envelope>
+2019-10-15 15:07:19,158 92145 [main] DEBUG c.s.m.b.service.MajescoSOAPService - Majesco BATCH Response:
+<wslite.http.HTTPResponse@8692d67 expiration=Wed Dec 31 18:00:00 CST 1969 statusMessage=OK charset=UTF-8 date=Tue Oct 15 15:07:15 CDT 2019 contentLength=668 lastModified=Wed Dec 31 18:00:00 CST 1969 url=https://mbsu.shelterinsurance.com:8743/jbeamicd?wsdl statusCode=200 headers={=HTTP/1.1 200 OK, Access-Control-Allow-Credentials=include, Access-Control-Allow-Headers=origin, content-type, accept, authorization, Access-Control-Allow-Methods=GET, POST, PUT, DELETE, OPTIONS, HEAD, Access-Control-Allow-Origin=*, Access-Control-Max-Age=1209600, Connection=close, Content-Encoding=gzip, Content-Length=668, Content-Type=text/xml;charset=UTF-8, Date=Tue, 15 Oct 2019 20:07:15 GMT, Vary=Accept-Encoding} contentEncoding=gzip contentType=text/xml>
+2019-10-15 15:07:19,160 92147 [main] DEBUG c.s.m.b.service.MajescoSOAPService - Response Body:
+<?xml version="1.0" encoding="UTF-8"?><soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <ns2:getBatchObjectDetailsResponse xmlns:ns2="http://services.server.ws.monitor.stgmastek.com/">
+      <return>
+        <responseTime>1571170035821</responseTime>
+        <responseType>OK</responseType>
+        <batchObjectList>
+          <beSeqNo>2489404</beSeqNo>
+          <objExecEndTime>1571169998287</objExecEndTime>
+          <objExecStartTime>1571169998219</objExecStartTime>
+          <status>Completed</status>
+          <taskName>RETURNED_PAYMENT_LETTER - Returned_Payment_Letter()</taskName>
+          <timeTaken>68</timeTaken>
+        </batchObjectList>
+        <batchObjectList>
+          <beSeqNo>2489410</beSeqNo>
+          <objExecEndTime>1571169998274</objExecEndTime>
+          <objExecStartTime>1571169998193</objExecStartTime>
+          <status>Completed</status>
+          <taskName>RETURNED_PAYMENT_LETTER - Returned_Payment_Letter()</taskName>
+          <timeTaken>81</timeTaken>
+        </batchObjectList>
+        <batchObjectList>
+          <beSeqNo>2489407</beSeqNo>
+          <objExecEndTime>1571169998270</objExecEndTime>
+          <objExecStartTime>1571169998184</objExecStartTime>
+          <status>Completed</status>
+          <taskName>RETURNED_PAYMENT_LETTER - Returned_Payment_Letter()</taskName>
+          <timeTaken>86</timeTaken>
+        </batchObjectList>
+        <batchObjectList>
+          <beSeqNo>2489401</beSeqNo>
+          <objExecEndTime>1571169998228</objExecEndTime>
+          <objExecStartTime>1571169998143</objExecStartTime>
+          <status>Completed</status>
+          <taskName>RETURNED_PAYMENT_LETTER - Returned_Payment_Letter()</taskName>
+          <timeTaken>85</timeTaken>
+        </batchObjectList>
+        <batchObjectList>
+          <beSeqNo>2489402</beSeqNo>
+          <objExecEndTime>1571169998216</objExecEndTime>
+          <objExecStartTime>1571169998055</objExecStartTime>
+          <status>Completed</status>
+          <taskName>CANCELLATION_CHECK - Cancellation_Check()</taskName>
+          <timeTaken>161</timeTaken>
+        </batchObjectList>
+        <batchObjectList>
+          <beSeqNo>2489409</beSeqNo>
+          <objExecEndTime>1571169998190</objExecEndTime>
+          <objExecStartTime>1571169998037</objExecStartTime>
+          <status>Completed</status>
+          <taskName>CANCELLATION_CHECK - Cancellation_Check()</taskName>
+          <timeTaken>153</timeTaken>
+        </batchObjectList>
+        <batchObjectList>
+          <beSeqNo>2489406</beSeqNo>
+          <objExecEndTime>1571169998181</objExecEndTime>
+          <objExecStartTime>1571169998023</objExecStartTime>
+          <status>Completed</status>
+          <taskName>CANCELLATION_CHECK - Cancellation_Check()</taskName>
+          <timeTaken>158</timeTaken>
+        </batchObjectList>
+        <batchObjectList>
+          <beSeqNo>2489399</beSeqNo>
+          <objExecEndTime>1571169998139</objExecEndTime>
+          <objExecStartTime>1571169997997</objExecStartTime>
+          <status>Completed</status>
+          <taskName>CANCELLATION_CHECK - Cancellation_Check()</taskName>
+          <timeTaken>142</timeTaken>
+        </batchObjectList>
+        <batchObjectList>
+          <beSeqNo>2489043</beSeqNo>
+          <objExecEndTime>1571169998219</objExecEndTime>
+          <objExecStartTime>1571169997948</objExecStartTime>
+          <status>Completed</status>
+          <taskName>CANCELLATION_CHECK - cancellation_check ()</taskName>
+          <timeTaken>271</timeTaken>
+        </batchObjectList>
+        <batchObjectList>
+          <beSeqNo>2489408</beSeqNo>
+          <objExecEndTime>1571169998034</objExecEndTime>
+          <objExecStartTime>1571169997760</objExecStartTime>
+          <status>Completed</status>
+          <taskName>VOID_RESCISSION - Void_Rescission()</taskName>
+          <timeTaken>274</timeTaken>
+        </batchObjectList>
+        <batchObjectList>
+          <beSeqNo>2489405</beSeqNo>
+          <objExecEndTime>1571169998020</objExecEndTime>
+          <objExecStartTime>1571169997758</objExecStartTime>
+          <status>Completed</status>
+          <taskName>VOID_RESCISSION - Void_Rescission()</taskName>
+          <timeTaken>262</timeTaken>
+        </batchObjectList>
+        <batchObjectList>
+          <beSeqNo>2489403</beSeqNo>
+          <objExecEndTime>1571169998051</objExecEndTime>
+          <objExecStartTime>1571169997744</objExecStartTime>
+          <status>Completed</status>
+          <taskName>VOID_RESCISSION - Void_Rescission()</taskName>
+          <timeTaken>307</timeTaken>
+        </batchObjectList>
+        <batchObjectList>
+          <beSeqNo>2489400</beSeqNo>
+          <objExecEndTime>1571169997993</objExecEndTime>
+          <objExecStartTime>1571169997705</objExecStartTime>
+          <status>Completed</status>
+          <taskName>VOID_RESCISSION - Void_Rescission()</taskName>
+          <timeTaken>288</timeTaken>
+        </batchObjectList>
+        <batchObjectList>
+          <beSeqNo>2489044</beSeqNo>
+          <objExecEndTime>1571169997944</objExecEndTime>
+          <objExecStartTime>1571169997703</objExecStartTime>
+          <status>Completed</status>
+          <taskName>PAST_DUE - Past_Due()</taskName>
+          <timeTaken>241</timeTaken>
+        </batchObjectList>
+      </return>
+    </ns2:getBatchObjectDetailsResponse>
+  </soap:Body>
+</soap:Envelope>
+
+2019-10-15 15:07:19,172 92159 [main] DEBUG c.s.m.b.tasklet.StartBatchTasklet - BatchObjectDetails sequenceNumbers [2489404, 2489410, 2489407, 2489401, 2489402, 2489409, 2489406, 2489399, 2489043, 2489408, 2489405, 2489403, 2489400, 2489044]
+2019-10-15 15:07:19,191 92178 [main] DEBUG c.s.majesco.batch.dao.StgBaseDao - policy activities for [2489404, 2489410, 2489407, 2489401, 2489402, 2489409, 2489406, 2489399, 2489043, 2489408, 2489405, 2489403, 2489400, 2489044]
+2019-10-15 15:07:19,319 92306 [main] DEBUG c.s.majesco.batch.dao.StgBaseDao - com.shelter.majesco.batch.domain.BatchPolicyResult(policyNumber, policyEffectiveDate, jobName, policyTermId, jobStatus, outputEvent)
+2019-10-15 15:07:19,372 92359 [main] DEBUG c.s.majesco.batch.dao.StgBaseDao - com.shelter.majesco.batch.domain.BatchPolicyResult(910152101, 2020-04-15, RETURNED_PAYMENT_LETTER, 47404, COMPLETED, RETURNED_PAYMENT_LETTER, SAY)
+2019-10-15 15:07:19,379 92366 [main] DEBUG c.s.majesco.batch.dao.StgBaseDao - com.shelter.majesco.batch.domain.BatchPolicyResult(910152103, 2020-04-15, RETURNED_PAYMENT_LETTER, 47406, COMPLETED, RETURNED_PAYMENT_LETTER, SAY)
+2019-10-15 15:07:19,384 92371 [main] DEBUG c.s.majesco.batch.dao.StgBaseDao - com.shelter.majesco.batch.domain.BatchPolicyResult(910152102, 2020-04-15, RETURNED_PAYMENT_LETTER, 47405, COMPLETED, RETURNED_PAYMENT_LETTER, SAY)
+2019-10-15 15:07:19,388 92375 [main] DEBUG c.s.majesco.batch.dao.StgBaseDao - com.shelter.majesco.batch.domain.BatchPolicyResult(910152100, 2020-04-15, RETURNED_PAYMENT_LETTER, 47403, COMPLETED, RETURNED_PAYMENT_LETTER, SAY)
+2019-10-15 15:07:19,396 92383 [main] DEBUG c.s.majesco.batch.dao.StgBaseDao - com.shelter.majesco.batch.domain.BatchPolicyResult(910152101, 2020-04-15, CANCELLATION_CHECK, 47404, COMPLETED, null, SAY)
+2019-10-15 15:07:19,401 92388 [main] DEBUG c.s.majesco.batch.dao.StgBaseDao - com.shelter.majesco.batch.domain.BatchPolicyResult(910152103, 2020-04-15, CANCELLATION_CHECK, 47406, COMPLETED, null, SAY)
+2019-10-15 15:07:19,404 92391 [main] DEBUG c.s.majesco.batch.dao.StgBaseDao - com.shelter.majesco.batch.domain.BatchPolicyResult(910152102, 2020-04-15, CANCELLATION_CHECK, 47405, COMPLETED, null, SAY)
+2019-10-15 15:07:19,410 92397 [main] DEBUG c.s.majesco.batch.dao.StgBaseDao - com.shelter.majesco.batch.domain.BatchPolicyResult(910152100, 2020-04-15, CANCELLATION_CHECK, 47403, COMPLETED, null, SAY)
+2019-10-15 15:07:19,413 92400 [main] DEBUG c.s.majesco.batch.dao.StgBaseDao - com.shelter.majesco.batch.domain.BatchPolicyResult(910141200, 2019-10-14, CANCELLATION_CHECK, 47398, COMPLETED, null, SAY)
+2019-10-15 15:07:19,418 92405 [main] DEBUG c.s.majesco.batch.dao.StgBaseDao - com.shelter.majesco.batch.domain.BatchPolicyResult(910152103, 2020-04-15, VOID_RESCISSION, 47406, COMPLETED, null, SAY)
+2019-10-15 15:07:19,422 92409 [main] DEBUG c.s.majesco.batch.dao.StgBaseDao - com.shelter.majesco.batch.domain.BatchPolicyResult(910152102, 2020-04-15, VOID_RESCISSION, 47405, COMPLETED, null, SAY)
+2019-10-15 15:07:19,426 92413 [main] DEBUG c.s.majesco.batch.dao.StgBaseDao - com.shelter.majesco.batch.domain.BatchPolicyResult(910152101, 2020-04-15, VOID_RESCISSION, 47404, COMPLETED, null, SAY)
+2019-10-15 15:07:19,432 92419 [main] DEBUG c.s.majesco.batch.dao.StgBaseDao - com.shelter.majesco.batch.domain.BatchPolicyResult(910152100, 2020-04-15, VOID_RESCISSION, 47403, COMPLETED, null, SAY)
+2019-10-15 15:07:19,436 92423 [main] DEBUG c.s.majesco.batch.dao.StgBaseDao - com.shelter.majesco.batch.domain.BatchPolicyResult(910141200, 2019-10-14, PAST_DUE, 47398, COMPLETED, null, SAY)
+2019-10-15 15:07:19,531 92518 [main] DEBUG c.s.m.b.service.MajescoSOAPService - Majesco BATCH endpoint: https://mbsu.shelterinsurance.com:8743/jbeamicd?wsdl
+2019-10-15 15:07:19,536 92523 [main] DEBUG c.s.m.b.service.MajescoSOAPService - Majesco BATCH Request:
+<wslite.http.HTTPRequest@2c7b5824 sslTrustAllCerts=false proxy=null useCaches=false followRedirects=true sslTrustStoreFile=null url=https://mbsu.shelterinsurance.com:8743/jbeamicd?wsdl headers={Content-Type=text/xml; charset=UTF-8} readTimeout=1200000 connectTimeout=600000 method=POST>
+2019-10-15 15:07:19,538 92525 [main] DEBUG c.s.m.b.service.MajescoSOAPService - Request Body:
+<?xml version='1.0' encoding='UTF-8'?>
+<soapenv:Envelope xmlns:soapenv='http://schemas.xmlsoap.org/soap/envelope/' xmlns:ser='http://services.server.ws.monitor.stgmastek.com/'>
+  <soapenv:Header />
+  <soapenv:Body><ser:getBatchObjectDetails>
+  <reqBatchDetails>
+    <batchNo>52973</batchNo>
+    <batchRevNo>1</batchRevNo>
+    <installationCode>STGMil14</installationCode>
+    <cycleNo>1</cycleNo>
+    <prePost>POST</prePost>
+  </reqBatchDetails>
+</ser:getBatchObjectDetails></soapenv:Body>
+</soapenv:Envelope>
+2019-10-15 15:07:19,540 92527 [main] DEBUG c.s.m.b.service.MajescoSOAPService - Majesco BATCH Response:
+<wslite.http.HTTPResponse@302a07d expiration=Wed Dec 31 18:00:00 CST 1969 statusMessage=OK charset=UTF-8 date=Tue Oct 15 15:07:16 CDT 2019 contentLength=641 lastModified=Wed Dec 31 18:00:00 CST 1969 url=https://mbsu.shelterinsurance.com:8743/jbeamicd?wsdl statusCode=200 headers={=HTTP/1.1 200 OK, Access-Control-Allow-Credentials=include, Access-Control-Allow-Headers=origin, content-type, accept, authorization, Access-Control-Allow-Methods=GET, POST, PUT, DELETE, OPTIONS, HEAD, Access-Control-Allow-Origin=*, Access-Control-Max-Age=1209600, Connection=close, Content-Length=641, Content-Type=text/xml;charset=UTF-8, Date=Tue, 15 Oct 2019 20:07:16 GMT} contentEncoding=null contentType=text/xml>
+2019-10-15 15:07:19,542 92529 [main] DEBUG c.s.m.b.service.MajescoSOAPService - Response Body:
+<?xml version="1.0" encoding="UTF-8"?><soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <ns2:getBatchObjectDetailsResponse xmlns:ns2="http://services.server.ws.monitor.stgmastek.com/">
+      <return>
+        <responseTime>1571170036201</responseTime>
+        <responseType>OK</responseType>
+        <batchObjectList>
+          <beSeqNo>2489418</beSeqNo>
+          <objExecEndTime>1571170000372</objExecEndTime>
+          <objExecStartTime>1571170000188</objExecStartTime>
+          <status>Completed</status>
+          <taskName>OUTPUT_FORMS_SCHEDULE_JOB - com.stgmastek.core.print.OutputFormsScheduleBatchJob</taskName>
+          <timeTaken>184</timeTaken>
+        </batchObjectList>
+      </return>
+    </ns2:getBatchObjectDetailsResponse>
+  </soap:Body>
+</soap:Envelope>
+
+2019-10-15 15:07:19,595 92582 [main] DEBUG c.s.m.b.service.MajescoSOAPService - Majesco BATCH endpoint: https://mbsu.shelterinsurance.com:8743/jbeamicd?wsdl
+2019-10-15 15:07:19,596 92583 [main] DEBUG c.s.m.b.service.MajescoSOAPService - Majesco BATCH Request:
+<wslite.http.HTTPRequest@5829e4f4 sslTrustAllCerts=false proxy=null useCaches=false followRedirects=true sslTrustStoreFile=null url=https://mbsu.shelterinsurance.com:8743/jbeamicd?wsdl headers={Content-Type=text/xml; charset=UTF-8} readTimeout=1200000 connectTimeout=600000 method=POST>
+2019-10-15 15:07:19,600 92587 [main] DEBUG c.s.m.b.service.MajescoSOAPService - Request Body:
+<?xml version='1.0' encoding='UTF-8'?>
+<soapenv:Envelope xmlns:soapenv='http://schemas.xmlsoap.org/soap/envelope/' xmlns:ser='http://services.server.ws.monitor.stgmastek.com/'>
+  <soapenv:Header />
+  <soapenv:Body><ser:getFaliedObjectDetails>
+  <reqListenerInfo>
+    <batchNo>52973</batchNo>
+    <batchRevNo>1</batchRevNo>
+    <installationCode>STGMil14</installationCode>
+    <listenerId>0</listenerId>
+  </reqListenerInfo>
+</ser:getFaliedObjectDetails></soapenv:Body>
+</soapenv:Envelope>
+2019-10-15 15:07:19,601 92588 [main] DEBUG c.s.m.b.service.MajescoSOAPService - Majesco BATCH Response:
+<wslite.http.HTTPResponse@4218500f expiration=Wed Dec 31 18:00:00 CST 1969 statusMessage=OK charset=UTF-8 date=Tue Oct 15 15:07:16 CDT 2019 contentLength=333 lastModified=Wed Dec 31 18:00:00 CST 1969 url=https://mbsu.shelterinsurance.com:8743/jbeamicd?wsdl statusCode=200 headers={=HTTP/1.1 200 OK, Access-Control-Allow-Credentials=include, Access-Control-Allow-Headers=origin, content-type, accept, authorization, Access-Control-Allow-Methods=GET, POST, PUT, DELETE, OPTIONS, HEAD, Access-Control-Allow-Origin=*, Access-Control-Max-Age=1209600, Connection=close, Content-Length=333, Content-Type=text/xml;charset=UTF-8, Date=Tue, 15 Oct 2019 20:07:16 GMT} contentEncoding=null contentType=text/xml>
+2019-10-15 15:07:19,604 92591 [main] DEBUG c.s.m.b.service.MajescoSOAPService - Response Body:
+<?xml version="1.0" encoding="UTF-8"?><soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <ns2:getFaliedObjectDetailsResponse xmlns:ns2="http://services.server.ws.monitor.stgmastek.com/">
+      <return>
+        <responseTime>1571170036266</responseTime>
+        <responseType>OK</responseType>
+      </return>
+    </ns2:getFaliedObjectDetailsResponse>
+  </soap:Body>
+</soap:Envelope>
+
+2019-10-15 15:07:19,624 92611 [main] INFO  c.s.m.b.c.JobCompletionNotificationListener - !!! JOB FINISHED!!!
+2019-10-15 15:07:19,627 92614 [main] INFO  o.s.b.c.l.support.SimpleJobLauncher - Job: [FlowJob: [name=majescoNightlyBatch]] completed with the following parameters: [{run.id=1}] and the following status: [COMPLETED]
+2019-10-15 15:07:19,629 92616 [main] INFO  c.s.m.batch.agedata.AgeDataRunner - Started AgeDataRunner in 81.243 seconds (JVM running for 93.685)
+2019-10-15 15:07:19,631 92618 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@63021689: startup date [Tue Oct 15 15:05:59 CDT 2019]; root of context hierarchy
+2019-10-15 15:07:19,632 92619 [main] INFO  o.s.c.s.DefaultLifecycleProcessor - Stopping beans in phase 2147483647
+2019-10-15 15:07:19,633 92620 [main] INFO  o.s.c.s.DefaultLifecycleProcessor - Stopping beans in phase -2147482648
+2019-10-15 15:07:19,635 92622 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2019-10-15 15:07:19,637 92624 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+2019-10-15 15:07:19,678 92665 [main] DEBUG c.s.m.batch.agedata.dao.BpmsCoreDao - batchJobsTotalSql row: {JOBS_TOTAL=37}
+2019-10-15 15:07:19,683 92670 [main] DEBUG c.s.m.batch.agedata.dao.BpmsCoreDao - batchJobsFailedSql row: {STATUS=CO, STATUS_COUNT=37}
+2019-10-15 15:07:19,689 92676 [main] DEBUG c.s.m.batch.agedata.dao.BpmsCoreDao - getBatchTimeSql row: {BATCH_NO=52973, ELAPSED_SECONDS=68, ELAPSED_MINUTES=1, EXEC_START_TIME=2019-10-15 15:06:03.748, EXEC_END_TIME=2019-10-15 15:07:11.831}
+2019-10-15 15:07:28,811 101798 [main] DEBUG c.s.majesco.batch.dao.StgBaseDao - table row: {NEXT_BUSINESS_DATE=2020-03-16 00:00:00.0}
+2019-10-15 15:07:28,812 101799 [main] DEBUG c.s.majesco.batch.dao.StgBaseDao - nextBusinessDate: 2020-03-16 00:00:00.0
+2019-10-15 15:07:28,816 101803 [main] DEBUG c.s.majesco.batch.dao.StgBaseDao - processing with NEXT_BUSINESS_DATE: 03/16/2020
+2019-10-15 15:07:28,966 101953 [main] INFO  c.s.m.batch.agedata.AgeDataRunner - Starting AgeDataRunner on COL-ISD-D90909 with PID 7568 (D:\Tools\shelter-batch-tool\lib\shelter-majesco-batch-3.1.0.BUILD-20190624.162757.jar started by tso8001 in D:\Tools\shelter-batch-tool)
+2019-10-15 15:07:28,967 101954 [main] DEBUG c.s.m.batch.agedata.AgeDataRunner - Running with Spring Boot v1.5.5.RELEASE, Spring v4.3.10.RELEASE
+2019-10-15 15:07:28,969 101956 [main] INFO  c.s.m.batch.agedata.AgeDataRunner - The following profiles are active: unit,local3
+2019-10-15 15:07:28,971 101958 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@7383eae2: startup date [Tue Oct 15 15:07:28 CDT 2019]; root of context hierarchy
+2019-10-15 15:07:29,374 102361 [main] WARN  o.s.c.a.ConfigurationClassEnhancer - @Bean method ScopeConfiguration.stepScope is non-static and returns an object assignable to Spring's BeanFactoryPostProcessor interface. This will result in a failure to process annotations such as @Autowired, @Resource and @PostConstruct within the method's declaring @Configuration class. Add the 'static' modifier to this method to avoid these container lifecycle issues; see @Bean javadoc for complete details.
+2019-10-15 15:07:29,377 102364 [main] WARN  o.s.c.a.ConfigurationClassEnhancer - @Bean method ScopeConfiguration.jobScope is non-static and returns an object assignable to Spring's BeanFactoryPostProcessor interface. This will result in a failure to process annotations such as @Autowired, @Resource and @PostConstruct within the method's declaring @Configuration class. Add the 'static' modifier to this method to avoid these container lifecycle issues; see @Bean javadoc for complete details.
+2019-10-15 15:07:29,382 102369 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-10-15 15:07:29,392 102379 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$cc19b948] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-15 15:07:29,405 102392 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'rabbitMQConfig' of type [com.shelter.majesco.batch.config.rabbit.RabbitMQConfig$$EnhancerBySpringCGLIB$$d110528f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-15 15:07:29,408 102395 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5adfb1a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-15 15:07:29,427 102414 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'truncationProcessor' of type [com.shelter.billing.utils.logging.TruncationProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-15 15:07:29,431 102418 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'objectMapperConfig' of type [com.shelter.majesco.batch.config.ObjectMapperConfig$$EnhancerBySpringCGLIB$$4ddb9b25] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-15 15:07:29,440 102427 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.jackson-org.springframework.boot.autoconfigure.jackson.JacksonProperties' of type [org.springframework.boot.autoconfigure.jackson.JacksonProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-15 15:07:29,447 102434 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration$$EnhancerBySpringCGLIB$$cea522b3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-15 15:07:29,452 102439 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'standardJacksonObjectMapperBuilderCustomizer' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration$StandardJackson2ObjectMapperBuilderCustomizer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-15 15:07:29,459 102446 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration$$EnhancerBySpringCGLIB$$138e3cc4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-15 15:07:29,465 102452 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JodaDateTimeJacksonConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JodaDateTimeJacksonConfiguration$$EnhancerBySpringCGLIB$$98b18128] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-15 15:07:29,469 102456 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'jodaDateTimeSerializationModule' of type [com.fasterxml.jackson.databind.module.SimpleModule] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-15 15:07:29,471 102458 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$$EnhancerBySpringCGLIB$$434d183a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-15 15:07:29,474 102461 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'jsonComponentModule' of type [org.springframework.boot.jackson.JsonComponentModule] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-15 15:07:29,481 102468 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'jacksonObjectMapperBuilder' of type [org.springframework.http.converter.json.Jackson2ObjectMapperBuilder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-15 15:07:29,489 102476 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'jacksonObjectMapper' of type [com.fasterxml.jackson.databind.ObjectMapper] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-15 15:07:29,499 102486 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'sensitiveDataMasker' of type [com.shelter.billing.utils.logging.SensitiveDataMasker] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-15 15:07:29,501 102488 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'inboundMessagePostProcessorLogger' of type [com.shelter.billing.utils.amqp.core.processors.logging.InboundMessagePostProcessorLogger] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-15 15:07:29,504 102491 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'outboundMessagePostProcessorLogger' of type [com.shelter.billing.utils.amqp.core.processors.logging.OutboundMessagePostProcessorLogger] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-15 15:07:29,587 102574 [main] WARN  o.s.b.c.c.a.DefaultBatchConfigurer - No datasource was provided...using a Map based JobRepository
+2019-10-15 15:07:29,595 102582 [main] INFO  o.s.b.c.l.support.SimpleJobLauncher - No TaskExecutor has been set, defaulting to synchronous executor.
+2019-10-15 15:07:29,727 102714 [main] INFO  o.s.u.f.SpringTemplateLoader - SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.context.annotation.AnnotationConfigApplicationContext@7383eae2: startup date [Tue Oct 15 15:07:28 CDT 2019]; root of context hierarchy] and template loader path [classpath:/templates/]
+2019-10-15 15:07:29,794 102781 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2019-10-15 15:07:29,800 102787 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'sayConnectionFactory' has been autodetected for JMX exposure
+2019-10-15 15:07:29,801 102788 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'shelterConnectionFactory' has been autodetected for JMX exposure
+2019-10-15 15:07:29,803 102790 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'shelterConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=shelterConnectionFactory,type=CachingConnectionFactory]
+2019-10-15 15:07:29,814 102801 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located managed bean 'sayConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=sayConnectionFactory,type=CachingConnectionFactory]
+2019-10-15 15:07:29,824 102811 [main] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase -2147482648
+2019-10-15 15:07:29,825 102812 [main] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+2019-10-15 15:07:29,833 102820 [main] INFO  o.s.b.a.b.JobLauncherCommandLineRunner - Running default command line with: [unit, 2020-03-16, shelter-batch-tool, D:/Tools/shelter-batch-tool/logs, aparashar@shelterinsurance.com]
+2019-10-15 15:07:29,837 102824 [main] INFO  o.s.b.c.l.support.SimpleJobLauncher - Job: [FlowJob: [name=majescoNightlyBatch]] launched with the following parameters: [{run.id=1}]
+2019-10-15 15:07:29,849 102836 [main] INFO  o.s.b.core.job.SimpleStepHandler - Executing step: [stepStartBatch]
+2019-10-15 15:07:29,853 102840 [main] DEBUG c.s.m.b.tasklet.StartBatchTasklet - === APPLICATION PROPERTIES START ===
+2019-10-15 15:07:29,853 102840 [main] DEBUG c.s.m.b.tasklet.StartBatchTasklet - businessBeginningOfDay: NEXT_BUSINESS_DATE
+2019-10-15 15:07:29,853 102840 [main] DEBUG c.s.m.b.tasklet.StartBatchTasklet - batchUrl: https://mbsu.shelterinsurance.com:8743/jbeamicd?wsdl
+2019-10-15 15:07:29,854 102841 [main] DEBUG c.s.m.b.tasklet.StartBatchTasklet - seqNo: 0
+2019-10-15 15:07:29,854 102841 [main] DEBUG c.s.m.b.tasklet.StartBatchTasklet - statusStartedPollCount: 60
+2019-10-15 15:07:29,854 102841 [main] DEBUG c.s.m.b.tasklet.StartBatchTasklet - sleepBetweenStatusStartedPollsInSeconds: 15
+2019-10-15 15:07:29,854 102841 [main] DEBUG c.s.m.b.tasklet.StartBatchTasklet - getBatchCompletedDataPollCount: 120
+2019-10-15 15:07:29,854 102841 [main] DEBUG c.s.m.b.tasklet.StartBatchTasklet - sleepBetweenGetBatchCompletedDataPollsInSeconds: 30
+2019-10-15 15:07:29,854 102841 [main] DEBUG c.s.m.b.tasklet.StartBatchTasklet - emailThresholdMillis: 900000
+2019-10-15 15:07:29,855 102842 [main] DEBUG c.s.m.b.tasklet.StartBatchTasklet - timeoutThresholdMillis: 3600000
+2019-10-15 15:07:29,855 102842 [main] DEBUG c.s.m.b.tasklet.StartBatchTasklet - majescoBatchUser: batchadmin
+2019-10-15 15:07:29,855 102842 [main] DEBUG c.s.m.b.tasklet.StartBatchTasklet - majescoInstallationCode: STGMil14
+2019-10-15 15:07:29,855 102842 [main] DEBUG c.s.m.b.tasklet.StartBatchTasklet - batchName: UNIT BATCH
+2019-10-15 15:07:29,855 102842 [main] DEBUG c.s.m.b.tasklet.StartBatchTasklet - === APPLICATION PROPERTIES END ===
+2019-10-15 15:07:29,881 102868 [main] DEBUG c.s.majesco.batch.dao.StgBaseDao - table row: {NEXT_BUSINESS_DATE=2020-03-16 00:00:00.0}
+2019-10-15 15:07:29,882 102869 [main] DEBUG c.s.majesco.batch.dao.StgBaseDao - nextBusinessDate: 2020-03-16 00:00:00.0
+2019-10-15 15:07:29,883 102870 [main] DEBUG c.s.majesco.batch.dao.StgBaseDao - processing with NEXT_BUSINESS_DATE: 03/16/2020
+2019-10-15 15:07:29,974 102961 [main] DEBUG c.s.m.b.service.MajescoSOAPService - Majesco BATCH endpoint: https://mbsu.shelterinsurance.com:8743/jbeamicd?wsdl
+2019-10-15 15:07:29,981 102968 [main] DEBUG c.s.m.b.service.MajescoSOAPService - Majesco BATCH Request:
+<wslite.http.HTTPRequest@27dc79f7 sslTrustAllCerts=false proxy=null useCaches=false followRedirects=true sslTrustStoreFile=null url=https://mbsu.shelterinsurance.com:8743/jbeamicd?wsdl headers={Content-Type=text/xml; charset=UTF-8} readTimeout=1200000 connectTimeout=600000 method=POST>
+2019-10-15 15:07:29,981 102968 [main] DEBUG c.s.m.b.service.MajescoSOAPService - Request Body:
+<?xml version='1.0' encoding='UTF-8'?>
+<soapenv:Envelope xmlns:soapenv='http://schemas.xmlsoap.org/soap/envelope/' xmlns:ser='http://services.server.ws.monitor.stgmastek.com/'>
+  <soapenv:Header />
+  <soapenv:Body><ser:runBatch><reqInstructionLog><installationCode>STGMil14</installationCode><instructingUser>batchadmin</instructingUser><instructionParameters><name>BATCH_NAME</name><slNo>1</slNo><type>S</type><value>UNIT BATCH</value></instructionParameters><instructionParameters><name>BATCH_TYPE</name><slNo>2</slNo><type>S</type><value>DATE</value></instructionParameters><instructionParameters><name>BATCH_RUN_DATE</name><slNo>3</slNo><type>TS</type><value>03/16/2020 00:00:00</value></instructionParameters><instructionParameters><name>SCHEDULE_DATE</name><slNo>4</slNo><type>TS</type><value>10/15/2019 15:07:29</value></instructionParameters><instructionTime>1571170049885</instructionTime><message>BSRUNBATCH</message></reqInstructionLog></ser:runBatch></soapenv:Body>
+</soapenv:Envelope>
+2019-10-15 15:07:29,982 102969 [main] DEBUG c.s.m.b.service.MajescoSOAPService - Majesco BATCH Response:
+<wslite.http.HTTPResponse@6b85300e expiration=Wed Dec 31 18:00:00 CST 1969 statusMessage=OK charset=UTF-8 date=Tue Oct 15 15:07:26 CDT 2019 contentLength=495 lastModified=Wed Dec 31 18:00:00 CST 1969 url=https://mbsu.shelterinsurance.com:8743/jbeamicd?wsdl statusCode=200 headers={=HTTP/1.1 200 OK, Access-Control-Allow-Credentials=include, Access-Control-Allow-Headers=origin, content-type, accept, authorization, Access-Control-Allow-Methods=GET, POST, PUT, DELETE, OPTIONS, HEAD, Access-Control-Allow-Origin=*, Access-Control-Max-Age=1209600, Connection=close, Content-Length=495, Content-Type=text/xml;charset=UTF-8, Date=Tue, 15 Oct 2019 20:07:26 GMT} contentEncoding=null contentType=text/xml>
+2019-10-15 15:07:29,985 102972 [main] DEBUG c.s.m.b.service.MajescoSOAPService - Response Body:
+<?xml version="1.0" encoding="UTF-8"?><soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <ns2:runBatchResponse xmlns:ns2="http://services.server.ws.monitor.stgmastek.com/">
+      <return>
+        <responseTime>1571170046642</responseTime>
+        <responseType>OK</responseType>
+        <batchDetails>
+          <installationCode>STGMil14</installationCode>
+          <instructionSeqNo>74049</instructionSeqNo>
+        </batchDetails>
+        <revisionBatch>false</revisionBatch>
+        <scheduledBatch>false</scheduledBatch>
+      </return>
+    </ns2:runBatchResponse>
+  </soap:Body>
+</soap:Envelope>
+
+2019-10-15 15:07:29,987 102974 [main] DEBUG c.s.m.b.tasklet.StartBatchTasklet - statusStartedPollCount: 60
+2019-10-15 15:07:29,988 102975 [main] DEBUG c.s.m.b.tasklet.StartBatchTasklet - checking if batch is started - count: 0
+2019-10-15 15:07:44,988 117975 [main] DEBUG c.s.m.b.tasklet.StartBatchTasklet - waited for 15 second
+2019-10-15 15:07:45,062 118049 [main] DEBUG c.s.m.b.service.MajescoSOAPService - Majesco BATCH endpoint: https://mbsu.shelterinsurance.com:8743/jbeamicd?wsdl
+2019-10-15 15:07:45,068 118055 [main] DEBUG c.s.m.b.service.MajescoSOAPService - Majesco BATCH Request:
+<wslite.http.HTTPRequest@5cbf9e9f sslTrustAllCerts=false proxy=null useCaches=false followRedirects=true sslTrustStoreFile=null url=https://mbsu.shelterinsurance.com:8743/jbeamicd?wsdl headers={Content-Type=text/xml; charset=UTF-8} readTimeout=1200000 connectTimeout=600000 method=POST>
+2019-10-15 15:07:45,074 118061 [main] DEBUG c.s.m.b.service.MajescoSOAPService - Request Body:
+<?xml version='1.0' encoding='UTF-8'?>
+<soapenv:Envelope xmlns:soapenv='http://schemas.xmlsoap.org/soap/envelope/' xmlns:ser='http://services.server.ws.monitor.stgmastek.com/'>
+  <soapenv:Header />
+  <soapenv:Body><ser:checkInstructionLog>
+  <reqInstructionLog>
+    <installationCode>STGMil14</installationCode>
+    <seqNo>74049</seqNo>
+  </reqInstructionLog>
+</ser:checkInstructionLog></soapenv:Body>
+</soapenv:Envelope>
+2019-10-15 15:07:45,078 118065 [main] DEBUG c.s.m.b.service.MajescoSOAPService - Majesco BATCH Response:
+<wslite.http.HTTPResponse@18e8473e expiration=Wed Dec 31 18:00:00 CST 1969 statusMessage=OK charset=UTF-8 date=Tue Oct 15 15:07:41 CDT 2019 contentLength=465 lastModified=Wed Dec 31 18:00:00 CST 1969 url=https://mbsu.shelterinsurance.com:8743/jbeamicd?wsdl statusCode=200 headers={=HTTP/1.1 200 OK, Access-Control-Allow-Credentials=include, Access-Control-Allow-Headers=origin, content-type, accept, authorization, Access-Control-Allow-Methods=GET, POST, PUT, DELETE, OPTIONS, HEAD, Access-Control-Allow-Origin=*, Access-Control-Max-Age=1209600, Connection=close, Content-Length=465, Content-Type=text/xml;charset=UTF-8, Date=Tue, 15 Oct 2019 20:07:41 GMT} contentEncoding=null contentType=text/xml>
+2019-10-15 15:07:45,081 118068 [main] DEBUG c.s.m.b.service.MajescoSOAPService - Response Body:
+<?xml version="1.0" encoding="UTF-8"?><soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <ns2:checkInstructionLogResponse xmlns:ns2="http://services.server.ws.monitor.stgmastek.com/">
+      <return>
+        <responseTime>1571170061720</responseTime>
+        <responseType>OK</responseType>
+        <instructionLog>
+          <batchAction>BATCH STARTED</batchAction>
+          <installationCode>JBM_9470</installationCode>
+          <seqNo>74049</seqNo>
+        </instructionLog>
+      </return>
+    </ns2:checkInstructionLogResponse>
+  </soap:Body>
+</soap:Envelope>
+
+2019-10-15 15:07:45,093 118080 [main] DEBUG c.s.m.b.tasklet.StartBatchTasklet - checking if batch is started - count: 1
+2019-10-15 15:07:45,156 118143 [main] DEBUG c.s.m.b.service.MajescoSOAPService - Majesco BATCH endpoint: https://mbsu.shelterinsurance.com:8743/jbeamicd?wsdl
+2019-10-15 15:07:45,160 118147 [main] DEBUG c.s.m.b.service.MajescoSOAPService - Majesco BATCH Request:
+<wslite.http.HTTPRequest@3ad394e6 sslTrustAllCerts=false proxy=null useCaches=false followRedirects=true sslTrustStoreFile=null url=https://mbsu.shelterinsurance.com:8743/jbeamicd?wsdl headers={Content-Type=text/xml; charset=UTF-8} readTimeout=1200000 connectTimeout=600000 method=POST>
+2019-10-15 15:07:45,164 118151 [main] DEBUG c.s.m.b.service.MajescoSOAPService - Request Body:
+<?xml version='1.0' encoding='UTF-8'?>
+<soapenv:Envelope xmlns:soapenv='http://schemas.xmlsoap.org/soap/envelope/' xmlns:ser='http://services.server.ws.monitor.stgmastek.com/'>
+  <soapenv:Header />
+  <soapenv:Body><ser:getBatchData>
+  <batch>
+    <installationCode>STGMil14</installationCode>
+    <instructionSeqNo>74049</instructionSeqNo>
+  </batch>
+</ser:getBatchData></soapenv:Body>
+</soapenv:Envelope>
+2019-10-15 15:07:45,167 118154 [main] DEBUG c.s.m.b.service.MajescoSOAPService - Majesco BATCH Response:
+<wslite.http.HTTPResponse@6058e535 expiration=Wed Dec 31 18:00:00 CST 1969 statusMessage=OK charset=UTF-8 date=Tue Oct 15 15:07:41 CDT 2019 contentLength=594 lastModified=Wed Dec 31 18:00:00 CST 1969 url=https://mbsu.shelterinsurance.com:8743/jbeamicd?wsdl statusCode=200 headers={=HTTP/1.1 200 OK, Access-Control-Allow-Credentials=include, Access-Control-Allow-Headers=origin, content-type, accept, authorization, Access-Control-Allow-Methods=GET, POST, PUT, DELETE, OPTIONS, HEAD, Access-Control-Allow-Origin=*, Access-Control-Max-Age=1209600, Connection=close, Content-Length=594, Content-Type=text/xml;charset=UTF-8, Date=Tue, 15 Oct 2019 20:07:41 GMT} contentEncoding=null contentType=text/xml>
+2019-10-15 15:07:45,170 118157 [main] DEBUG c.s.m.b.service.MajescoSOAPService - Response Body:
+<?xml version="1.0" encoding="UTF-8"?><soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <ns2:getBatchDataResponse xmlns:ns2="http://services.server.ws.monitor.stgmastek.com/">
+      <return>
+        <responseTime>1571170061814</responseTime>
+        <responseType>OK</responseType>
+        <batchDetails>
+          <batchName>UNIT BATCH</batchName>
+          <batchNo>52974</batchNo>
+          <batchRevNo>1</batchRevNo>
+          <batchStartUser>batchadmin</batchStartUser>
+          <batchType>DATE</batchType>
+          <execStartTime>1571170049789</execStartTime>
+          <failedOver>N</failedOver>
+          <processId>496086</processId>
+        </batchDetails>
+      </return>
+    </ns2:getBatchDataResponse>
+  </soap:Body>
+</soap:Envelope>
+
+2019-10-15 15:07:45,237 118224 [main] DEBUG c.s.m.b.service.MajescoSOAPService - Majesco BATCH endpoint: https://mbsu.shelterinsurance.com:8743/jbeamicd?wsdl
+2019-10-15 15:07:45,239 118226 [main] DEBUG c.s.m.b.service.MajescoSOAPService - Majesco BATCH Request:
+<wslite.http.HTTPRequest@1deb2c43 sslTrustAllCerts=false proxy=null useCaches=false followRedirects=true sslTrustStoreFile=null url=https://mbsu.shelterinsurance.com:8743/jbeamicd?wsdl headers={Content-Type=text/xml; charset=UTF-8} readTimeout=1200000 connectTimeout=600000 method=POST>
+2019-10-15 15:07:45,243 118230 [main] DEBUG c.s.m.b.service.MajescoSOAPService - Request Body:
+<?xml version='1.0' encoding='UTF-8'?>
+<soapenv:Envelope xmlns:soapenv='http://schemas.xmlsoap.org/soap/envelope/' xmlns:ser='http://services.server.ws.monitor.stgmastek.com/'>
+  <soapenv:Header />
+  <soapenv:Body><ser:getBatchCompletedData>
+  <searchBatch>
+    <batchNo>52974</batchNo>
+    <installationCode>STGMil14</installationCode>
+  </searchBatch>
+</ser:getBatchCompletedData></soapenv:Body>
+</soapenv:Envelope>
+2019-10-15 15:07:45,245 118232 [main] DEBUG c.s.m.b.service.MajescoSOAPService - Majesco BATCH Response:
+<wslite.http.HTTPResponse@3bb9efbc expiration=Wed Dec 31 18:00:00 CST 1969 statusMessage=OK charset=UTF-8 date=Tue Oct 15 15:07:41 CDT 2019 contentLength=331 lastModified=Wed Dec 31 18:00:00 CST 1969 url=https://mbsu.shelterinsurance.com:8743/jbeamicd?wsdl statusCode=200 headers={=HTTP/1.1 200 OK, Access-Control-Allow-Credentials=include, Access-Control-Allow-Headers=origin, content-type, accept, authorization, Access-Control-Allow-Methods=GET, POST, PUT, DELETE, OPTIONS, HEAD, Access-Control-Allow-Origin=*, Access-Control-Max-Age=1209600, Connection=close, Content-Length=331, Content-Type=text/xml;charset=UTF-8, Date=Tue, 15 Oct 2019 20:07:41 GMT} contentEncoding=null contentType=text/xml>
+2019-10-15 15:07:45,250 118237 [main] DEBUG c.s.m.b.service.MajescoSOAPService - Response Body:
+<?xml version="1.0" encoding="UTF-8"?><soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <ns2:getBatchCompletedDataResponse xmlns:ns2="http://services.server.ws.monitor.stgmastek.com/">
+      <return>
+        <responseTime>1571170061898</responseTime>
+        <responseType>OK</responseType>
+      </return>
+    </ns2:getBatchCompletedDataResponse>
+  </soap:Body>
+</soap:Envelope>
+
+2019-10-15 15:07:45,257 118244 [main] DEBUG c.s.m.b.tasklet.StartBatchTasklet - checking for BatchCompletedData - count: 1
+2019-10-15 15:08:15,261 148248 [main] DEBUG c.s.m.b.tasklet.StartBatchTasklet - waited for 30 second
+2019-10-15 15:16:28,941 641928 [main] DEBUG c.s.m.b.service.MajescoSOAPService - Majesco BATCH endpoint: https://mbsu.shelterinsurance.com:8743/jbeamicd?wsdl
+2019-10-15 15:16:28,943 641930 [main] DEBUG c.s.m.b.service.MajescoSOAPService - Majesco BATCH Request:
+<wslite.http.HTTPRequest@58cd06cb sslTrustAllCerts=false proxy=null useCaches=false followRedirects=true sslTrustStoreFile=null url=https://mbsu.shelterinsurance.com:8743/jbeamicd?wsdl headers={Content-Type=text/xml; charset=UTF-8} readTimeout=1200000 connectTimeout=600000 method=POST>
+2019-10-15 15:16:28,944 641931 [main] DEBUG c.s.m.b.service.MajescoSOAPService - Request Body:
+<?xml version='1.0' encoding='UTF-8'?>
+<soapenv:Envelope xmlns:soapenv='http://schemas.xmlsoap.org/soap/envelope/' xmlns:ser='http://services.server.ws.monitor.stgmastek.com/'>
+  <soapenv:Header />
+  <soapenv:Body><ser:getBatchCompletedData>
+  <searchBatch>
+    <batchNo>52974</batchNo>
+    <installationCode>STGMil14</installationCode>
+  </searchBatch>
+</ser:getBatchCompletedData></soapenv:Body>
+</soapenv:Envelope>
+2019-10-15 15:16:28,946 641933 [main] DEBUG c.s.m.b.service.MajescoSOAPService - Majesco BATCH Response:
+<wslite.http.HTTPResponse@74a9c4b0 expiration=Wed Dec 31 18:00:00 CST 1969 statusMessage=OK charset=UTF-8 date=Tue Oct 15 15:16:25 CDT 2019 contentLength=639 lastModified=Wed Dec 31 18:00:00 CST 1969 url=https://mbsu.shelterinsurance.com:8743/jbeamicd?wsdl statusCode=200 headers={=HTTP/1.1 200 OK, Access-Control-Allow-Credentials=include, Access-Control-Allow-Headers=origin, content-type, accept, authorization, Access-Control-Allow-Methods=GET, POST, PUT, DELETE, OPTIONS, HEAD, Access-Control-Allow-Origin=*, Access-Control-Max-Age=1209600, Connection=close, Content-Length=639, Content-Type=text/xml;charset=UTF-8, Date=Tue, 15 Oct 2019 20:16:25 GMT} contentEncoding=null contentType=text/xml>
+2019-10-15 15:16:28,948 641935 [main] DEBUG c.s.m.b.service.MajescoSOAPService - Response Body:
+<?xml version="1.0" encoding="UTF-8"?><soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <ns2:getBatchCompletedDataResponse xmlns:ns2="http://services.server.ws.monitor.stgmastek.com/">
+      <return>
+        <responseTime>1571170585557</responseTime>
+        <responseType>OK</responseType>
+        <batchDetailsList>
+          <batchEndReason>BATCH_COMPLETED</batchEndReason>
+          <batchName>UNIT BATCH</batchName>
+          <batchNo>52974</batchNo>
+          <batchRevNo>1</batchRevNo>
+          <batchType>DATE</batchType>
+          <execEndTime>1571170118817</execEndTime>
+          <execStartTime>1571170049789</execStartTime>
+          <processId>496086</processId>
+        </batchDetailsList>
+      </return>
+    </ns2:getBatchCompletedDataResponse>
+  </soap:Body>
+</soap:Envelope>
+
+2019-10-15 15:16:29,012 641999 [main] DEBUG c.s.m.b.service.MajescoSOAPService - Majesco BATCH endpoint: https://mbsu.shelterinsurance.com:8743/jbeamicd?wsdl
+2019-10-15 15:16:29,015 642002 [main] DEBUG c.s.m.b.service.MajescoSOAPService - Majesco BATCH Request:
+<wslite.http.HTTPRequest@62577d6 sslTrustAllCerts=false proxy=null useCaches=false followRedirects=true sslTrustStoreFile=null url=https://mbsu.shelterinsurance.com:8743/jbeamicd?wsdl headers={Content-Type=text/xml; charset=UTF-8} readTimeout=1200000 connectTimeout=600000 method=POST>
+2019-10-15 15:16:29,015 642002 [main] DEBUG c.s.m.b.service.MajescoSOAPService - Request Body:
+<?xml version='1.0' encoding='UTF-8'?>
+<soapenv:Envelope xmlns:soapenv='http://schemas.xmlsoap.org/soap/envelope/' xmlns:ser='http://services.server.ws.monitor.stgmastek.com/'>
+  <soapenv:Header />
+  <soapenv:Body><ser:getBatchInfo>
+  <batch>
+    <batchNo>52974</batchNo>
+    <batchRevNo>1</batchRevNo>
+    <installationCode>STGMil14</installationCode>
+  </batch>
+</ser:getBatchInfo></soapenv:Body>
+</soapenv:Envelope>
+2019-10-15 15:16:29,016 642003 [main] DEBUG c.s.m.b.service.MajescoSOAPService - Majesco BATCH Response:
+<wslite.http.HTTPResponse@49bd54f7 expiration=Wed Dec 31 18:00:00 CST 1969 statusMessage=OK charset=UTF-8 date=Tue Oct 15 15:16:25 CDT 2019 contentLength=2183 lastModified=Wed Dec 31 18:00:00 CST 1969 url=https://mbsu.shelterinsurance.com:8743/jbeamicd?wsdl statusCode=200 headers={=HTTP/1.1 200 OK, Access-Control-Allow-Credentials=include, Access-Control-Allow-Headers=origin, content-type, accept, authorization, Access-Control-Allow-Methods=GET, POST, PUT, DELETE, OPTIONS, HEAD, Access-Control-Allow-Origin=*, Access-Control-Max-Age=1209600, Connection=close, Content-Encoding=gzip, Content-Length=2183, Content-Type=text/xml;charset=UTF-8, Date=Tue, 15 Oct 2019 20:16:25 GMT, Vary=Accept-Encoding} contentEncoding=gzip contentType=text/xml>
+2019-10-15 15:16:29,020 642007 [main] DEBUG c.s.m.b.service.MajescoSOAPService - Response Body:
+<?xml version="1.0" encoding="UTF-8"?><soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <ns2:getBatchInfoResponse xmlns:ns2="http://services.server.ws.monitor.stgmastek.com/">
+      <return>
+        <responseTime>1571170585629</responseTime>
+        <responseType>OK</responseType>
+        <batchDataList>
+          <batchEndReason>BATCH_COMPLETED</batchEndReason>
+          <batchNo>52974</batchNo>
+          <batchRevNo>1</batchRevNo>
+          <batchTimeDiff>00:01:69</batchTimeDiff>
+          <entityList>
+            <description>Enter the priority code 1 to execute all PRE events associated with it.</description>
+            <entity>PRE</entity>
+            <installationCode>STGMil14</installationCode>
+            <lookupColumn>PRE_POST</lookupColumn>
+            <lookupValue>PRE</lookupValue>
+            <numberOfRequiredParameters>1</numberOfRequiredParameters>
+            <precedenceOrder>1</precedenceOrder>
+            <valueColumn>PRIORITY_CODE_1</valueColumn>
+          </entityList>
+          <entityList>
+            <description>Enter the ACCOUNT_SYSTEM_CODE.</description>
+            <entity>ACCOUNT</entity>
+            <installationCode>STGMil14</installationCode>
+            <lookupColumn>BATCH_TYPE</lookupColumn>
+            <lookupValue>ACCOUNT_NIGHT</lookupValue>
+            <numberOfRequiredParameters>1</numberOfRequiredParameters>
+            <onErrorFailAll>Y</onErrorFailAll>
+            <precedenceOrder>2</precedenceOrder>
+            <valueColumn>ACCOUNT_SYSTEM_CODE</valueColumn>
+          </entityList>
+          <entityList>
+            <description>Enter the POLICY_ID</description>
+            <entity>POLICY</entity>
+            <installationCode>STGMil14</installationCode>
+            <lookupColumn>BATCH_TYPE</lookupColumn>
+            <lookupValue>POLICY_NIGHT</lookupValue>
+            <numberOfRequiredParameters>1</numberOfRequiredParameters>
+            <onErrorFailAll>Y</onErrorFailAll>
+            <precedenceOrder>3</precedenceOrder>
+            <valueColumn>POLICY_ID</valueColumn>
+          </entityList>
+          <entityList>
+            <description>Enter the BROKER_SYSTEM_CODE.</description>
+            <entity>BROKER</entity>
+            <installationCode>STGMil14</installationCode>
+            <lookupColumn>ENTITY_GROUP</lookupColumn>
+            <lookupValue>BROKER</lookupValue>
+            <numberOfRequiredParameters>1</numberOfRequiredParameters>
+            <onErrorFailAll>Y</onErrorFailAll>
+            <precedenceOrder>6</precedenceOrder>
+            <valueColumn>BROKER_SYSTEM_CODE</valueColumn>
+          </entityList>
+          <entityList>
+            <description>Enter the job sequence number</description>
+            <entity>GENERAL</entity>
+            <installationCode>STGMil14</installationCode>
+            <lookupColumn>JOB_NAME</lookupColumn>
+            <lookupValue>RELEASE_BATCH</lookupValue>
+            <numberOfRequiredParameters>1</numberOfRequiredParameters>
+            <precedenceOrder>7</precedenceOrder>
+            <valueColumn>JOB_SEQ</valueColumn>
+          </entityList>
+          <entityList>
+            <entity>DAY_BATCH_ACCOUNT</entity>
+            <installationCode>STGMil14</installationCode>
+            <lookupColumn>BATCH_TYPE</lookupColumn>
+            <lookupValue>ACCOUNT_DAY</lookupValue>
+            <numberOfRequiredParameters>1</numberOfRequiredParameters>
+            <onErrorFailAll>Y</onErrorFailAll>
+            <precedenceOrder>997</precedenceOrder>
+            <valueColumn>ACCOUNT_SYSTEM_CODE</valueColumn>
+          </entityList>
+          <entityList>
+            <description>Enter the POLICY_ID</description>
+            <entity>DAY_BATCH_POLICY</entity>
+            <installationCode>STGMil14</installationCode>
+            <lookupColumn>BATCH_TYPE</lookupColumn>
+            <lookupValue>POLICY_DAY</lookupValue>
+            <numberOfRequiredParameters>1</numberOfRequiredParameters>
+            <onErrorFailAll>Y</onErrorFailAll>
+            <precedenceOrder>998</precedenceOrder>
+            <valueColumn>POLICY_ID</valueColumn>
+          </entityList>
+          <entityList>
+            <description>Enter the priority code 1 to execute the POST jobs associated with it</description>
+            <entity>POST</entity>
+            <installationCode>STGMil14</installationCode>
+            <lookupColumn>PRE_POST</lookupColumn>
+            <lookupValue>POST</lookupValue>
+            <numberOfRequiredParameters>1</numberOfRequiredParameters>
+            <precedenceOrder>999</precedenceOrder>
+            <valueColumn>PRIORITY_CODE_1</valueColumn>
+          </entityList>
+          <execEndTime>1571170118817</execEndTime>
+          <execStartTime>1571170049789</execStartTime>
+          <noOfListners>4</noOfListners>
+          <noOfObjects>31</noOfObjects>
+          <noOfObjectsExecuted>31</noOfObjectsExecuted>
+          <noOfObjectsFailed>0</noOfObjectsFailed>
+          <noOfObjectsSkipped>0</noOfObjectsSkipped>
+          <progressLevelDataList>
+            <batchNo>52974</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>0</cycleNo>
+            <endDatetime>1571170118826</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>68</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>CLOSURE</prgActivityType>
+            <startDatetime>1571170118814</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52974</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>14</cycleNo>
+            <endDatetime>1571170118513</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>67</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>EXECUTION</prgActivityType>
+            <prgLevelType>POST</prgLevelType>
+            <startDatetime>1571170114555</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52974</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>14</cycleNo>
+            <endDatetime>1571170114553</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>66</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>SCHEDULING</prgActivityType>
+            <prgLevelType>POST</prgLevelType>
+            <startDatetime>1571170114548</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52974</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>14</cycleNo>
+            <endDatetime>1571170114547</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>65</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>ASSIGNMENT</prgActivityType>
+            <prgLevelType>POST</prgLevelType>
+            <startDatetime>1571170114250</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52974</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>13</cycleNo>
+            <endDatetime>1571170113722</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>64</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>EXECUTION</prgActivityType>
+            <prgLevelType>POST</prgLevelType>
+            <startDatetime>1571170112465</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52974</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>13</cycleNo>
+            <endDatetime>1571170112463</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>63</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>SCHEDULING</prgActivityType>
+            <prgLevelType>POST</prgLevelType>
+            <startDatetime>1571170112459</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52974</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>13</cycleNo>
+            <endDatetime>1571170112458</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>62</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>ASSIGNMENT</prgActivityType>
+            <prgLevelType>POST</prgLevelType>
+            <startDatetime>1571170112170</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52974</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>12</cycleNo>
+            <endDatetime>1571170111644</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>61</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>EXECUTION</prgActivityType>
+            <prgLevelType>POST</prgLevelType>
+            <startDatetime>1571170110232</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52974</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>12</cycleNo>
+            <endDatetime>1571170110230</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>60</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>SCHEDULING</prgActivityType>
+            <prgLevelType>POST</prgLevelType>
+            <startDatetime>1571170110226</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52974</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>12</cycleNo>
+            <endDatetime>1571170110224</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>59</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>ASSIGNMENT</prgActivityType>
+            <prgLevelType>POST</prgLevelType>
+            <startDatetime>1571170109922</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52974</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>11</cycleNo>
+            <endDatetime>1571170109393</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>58</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>EXECUTION</prgActivityType>
+            <prgLevelType>POST</prgLevelType>
+            <startDatetime>1571170108055</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52974</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>11</cycleNo>
+            <endDatetime>1571170108054</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>57</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>SCHEDULING</prgActivityType>
+            <prgLevelType>POST</prgLevelType>
+            <startDatetime>1571170108048</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52974</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>11</cycleNo>
+            <endDatetime>1571170108046</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>56</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>ASSIGNMENT</prgActivityType>
+            <prgLevelType>POST</prgLevelType>
+            <startDatetime>1571170107727</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52974</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>10</cycleNo>
+            <endDatetime>1571170107173</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>55</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>EXECUTION</prgActivityType>
+            <prgLevelType>POST</prgLevelType>
+            <startDatetime>1571170105859</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52974</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>10</cycleNo>
+            <endDatetime>1571170105858</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>54</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>SCHEDULING</prgActivityType>
+            <prgLevelType>POST</prgLevelType>
+            <startDatetime>1571170105853</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52974</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>10</cycleNo>
+            <endDatetime>1571170105851</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>53</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>ASSIGNMENT</prgActivityType>
+            <prgLevelType>POST</prgLevelType>
+            <startDatetime>1571170105510</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52974</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>9</cycleNo>
+            <endDatetime>1571170104976</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>52</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>EXECUTION</prgActivityType>
+            <prgLevelType>POST</prgLevelType>
+            <startDatetime>1571170103625</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52974</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>9</cycleNo>
+            <endDatetime>1571170103624</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>51</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>SCHEDULING</prgActivityType>
+            <prgLevelType>POST</prgLevelType>
+            <startDatetime>1571170103619</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52974</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>9</cycleNo>
+            <endDatetime>1571170103618</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>50</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>ASSIGNMENT</prgActivityType>
+            <prgLevelType>POST</prgLevelType>
+            <startDatetime>1571170103318</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52974</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>8</cycleNo>
+            <endDatetime>1571170102774</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>49</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>EXECUTION</prgActivityType>
+            <prgLevelType>POST</prgLevelType>
+            <startDatetime>1571170102120</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52974</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>8</cycleNo>
+            <endDatetime>1571170102118</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>48</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>SCHEDULING</prgActivityType>
+            <prgLevelType>POST</prgLevelType>
+            <startDatetime>1571170102114</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52974</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>8</cycleNo>
+            <endDatetime>1571170102112</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>47</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>ASSIGNMENT</prgActivityType>
+            <prgLevelType>POST</prgLevelType>
+            <startDatetime>1571170101843</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52974</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>7</cycleNo>
+            <endDatetime>1571170101139</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>46</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>EXECUTION</prgActivityType>
+            <prgLevelType>POST</prgLevelType>
+            <startDatetime>1571170099278</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52974</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>7</cycleNo>
+            <endDatetime>1571170099276</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>45</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>SCHEDULING</prgActivityType>
+            <prgLevelType>POST</prgLevelType>
+            <startDatetime>1571170099272</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52974</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>7</cycleNo>
+            <endDatetime>1571170099271</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>44</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>ASSIGNMENT</prgActivityType>
+            <prgLevelType>POST</prgLevelType>
+            <startDatetime>1571170098977</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52974</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>6</cycleNo>
+            <endDatetime>1571170098431</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>43</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>EXECUTION</prgActivityType>
+            <prgLevelType>POST</prgLevelType>
+            <startDatetime>1571170097073</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52974</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>6</cycleNo>
+            <endDatetime>1571170097071</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>42</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>SCHEDULING</prgActivityType>
+            <prgLevelType>POST</prgLevelType>
+            <startDatetime>1571170097067</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52974</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>6</cycleNo>
+            <endDatetime>1571170097065</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>41</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>ASSIGNMENT</prgActivityType>
+            <prgLevelType>POST</prgLevelType>
+            <startDatetime>1571170096758</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52974</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>5</cycleNo>
+            <endDatetime>1571170096240</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>40</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>EXECUTION</prgActivityType>
+            <prgLevelType>POST</prgLevelType>
+            <startDatetime>1571170094892</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52974</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>5</cycleNo>
+            <endDatetime>1571170094890</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>39</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>SCHEDULING</prgActivityType>
+            <prgLevelType>POST</prgLevelType>
+            <startDatetime>1571170094882</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52974</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>5</cycleNo>
+            <endDatetime>1571170094881</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>38</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>ASSIGNMENT</prgActivityType>
+            <prgLevelType>POST</prgLevelType>
+            <startDatetime>1571170094592</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52974</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>4</cycleNo>
+            <endDatetime>1571170094073</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>37</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>EXECUTION</prgActivityType>
+            <prgLevelType>POST</prgLevelType>
+            <startDatetime>1571170092790</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52974</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>4</cycleNo>
+            <endDatetime>1571170092789</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>36</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>SCHEDULING</prgActivityType>
+            <prgLevelType>POST</prgLevelType>
+            <startDatetime>1571170092785</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52974</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>4</cycleNo>
+            <endDatetime>1571170092784</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>35</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>ASSIGNMENT</prgActivityType>
+            <prgLevelType>POST</prgLevelType>
+            <startDatetime>1571170092501</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52974</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>3</cycleNo>
+            <endDatetime>1571170091965</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>34</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>EXECUTION</prgActivityType>
+            <prgLevelType>POST</prgLevelType>
+            <startDatetime>1571170090582</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52974</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>3</cycleNo>
+            <endDatetime>1571170090581</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>33</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>SCHEDULING</prgActivityType>
+            <prgLevelType>POST</prgLevelType>
+            <startDatetime>1571170090576</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52974</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>3</cycleNo>
+            <endDatetime>1571170090575</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>32</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>ASSIGNMENT</prgActivityType>
+            <prgLevelType>POST</prgLevelType>
+            <startDatetime>1571170090278</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52974</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>2</cycleNo>
+            <endDatetime>1571170089741</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>31</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>EXECUTION</prgActivityType>
+            <prgLevelType>POST</prgLevelType>
+            <startDatetime>1571170088505</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52974</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>2</cycleNo>
+            <endDatetime>1571170088504</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>30</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>SCHEDULING</prgActivityType>
+            <prgLevelType>POST</prgLevelType>
+            <startDatetime>1571170088499</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52974</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>2</cycleNo>
+            <endDatetime>1571170088498</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>29</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>ASSIGNMENT</prgActivityType>
+            <prgLevelType>POST</prgLevelType>
+            <startDatetime>1571170088193</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52974</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>1</cycleNo>
+            <endDatetime>1571170087653</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>28</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>EXECUTION</prgActivityType>
+            <prgLevelType>POST</prgLevelType>
+            <startDatetime>1571170086789</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52974</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>1</cycleNo>
+            <endDatetime>1571170086788</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>27</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>SCHEDULING</prgActivityType>
+            <prgLevelType>POST</prgLevelType>
+            <startDatetime>1571170086783</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52974</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>1</cycleNo>
+            <endDatetime>1571170086782</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>26</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>ASSIGNMENT</prgActivityType>
+            <prgLevelType>POST</prgLevelType>
+            <startDatetime>1571170086522</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52974</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>0</cycleNo>
+            <endDatetime>1571170085975</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>25</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>PROCREATION</prgActivityType>
+            <prgLevelType>POST</prgLevelType>
+            <startDatetime>1571170085850</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52974</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>1</cycleNo>
+            <endDatetime>1571170085833</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>24</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>EXECUTION</prgActivityType>
+            <prgLevelType>POLICY</prgLevelType>
+            <startDatetime>1571170083267</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52974</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>1</cycleNo>
+            <endDatetime>1571170083266</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>23</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>SCHEDULING</prgActivityType>
+            <prgLevelType>POLICY</prgLevelType>
+            <startDatetime>1571170083259</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52974</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>1</cycleNo>
+            <endDatetime>1571170083258</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>22</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>ASSIGNMENT</prgActivityType>
+            <prgLevelType>POLICY</prgLevelType>
+            <startDatetime>1571170083244</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52974</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>6</cycleNo>
+            <endDatetime>1571170082966</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>21</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>EXECUTION</prgActivityType>
+            <prgLevelType>PRE</prgLevelType>
+            <startDatetime>1571170061599</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52974</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>6</cycleNo>
+            <endDatetime>1571170061598</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>20</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>SCHEDULING</prgActivityType>
+            <prgLevelType>PRE</prgLevelType>
+            <startDatetime>1571170061594</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52974</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>6</cycleNo>
+            <endDatetime>1571170061593</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>19</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>ASSIGNMENT</prgActivityType>
+            <prgLevelType>PRE</prgLevelType>
+            <startDatetime>1571170061323</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52974</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>5</cycleNo>
+            <endDatetime>1571170060833</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>18</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>EXECUTION</prgActivityType>
+            <prgLevelType>PRE</prgLevelType>
+            <startDatetime>1571170059485</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52974</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>5</cycleNo>
+            <endDatetime>1571170059483</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>17</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>SCHEDULING</prgActivityType>
+            <prgLevelType>PRE</prgLevelType>
+            <startDatetime>1571170059479</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52974</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>5</cycleNo>
+            <endDatetime>1571170059478</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>16</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>ASSIGNMENT</prgActivityType>
+            <prgLevelType>PRE</prgLevelType>
+            <startDatetime>1571170059198</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52974</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>4</cycleNo>
+            <endDatetime>1571170058690</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>15</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>EXECUTION</prgActivityType>
+            <prgLevelType>PRE</prgLevelType>
+            <startDatetime>1571170057624</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52974</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>4</cycleNo>
+            <endDatetime>1571170057623</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>14</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>SCHEDULING</prgActivityType>
+            <prgLevelType>PRE</prgLevelType>
+            <startDatetime>1571170057619</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52974</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>4</cycleNo>
+            <endDatetime>1571170057618</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>13</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>ASSIGNMENT</prgActivityType>
+            <prgLevelType>PRE</prgLevelType>
+            <startDatetime>1571170057359</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52974</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>3</cycleNo>
+            <endDatetime>1571170056823</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>12</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>EXECUTION</prgActivityType>
+            <prgLevelType>PRE</prgLevelType>
+            <startDatetime>1571170055229</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52974</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>3</cycleNo>
+            <endDatetime>1571170055228</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>11</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>SCHEDULING</prgActivityType>
+            <prgLevelType>PRE</prgLevelType>
+            <startDatetime>1571170055223</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52974</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>3</cycleNo>
+            <endDatetime>1571170055222</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>10</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>ASSIGNMENT</prgActivityType>
+            <prgLevelType>PRE</prgLevelType>
+            <startDatetime>1571170054920</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52974</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>2</cycleNo>
+            <endDatetime>1571170054397</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>9</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>EXECUTION</prgActivityType>
+            <prgLevelType>PRE</prgLevelType>
+            <startDatetime>1571170053092</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52974</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>2</cycleNo>
+            <endDatetime>1571170053091</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>8</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>SCHEDULING</prgActivityType>
+            <prgLevelType>PRE</prgLevelType>
+            <startDatetime>1571170053087</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52974</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>2</cycleNo>
+            <endDatetime>1571170053086</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>7</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>ASSIGNMENT</prgActivityType>
+            <prgLevelType>PRE</prgLevelType>
+            <startDatetime>1571170052780</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52974</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>1</cycleNo>
+            <endDatetime>1571170052254</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>6</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>EXECUTION</prgActivityType>
+            <prgLevelType>PRE</prgLevelType>
+            <startDatetime>1571170050907</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52974</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>1</cycleNo>
+            <endDatetime>1571170050906</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>5</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>SCHEDULING</prgActivityType>
+            <prgLevelType>PRE</prgLevelType>
+            <startDatetime>1571170050902</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52974</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>1</cycleNo>
+            <endDatetime>1571170050901</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>4</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>ASSIGNMENT</prgActivityType>
+            <prgLevelType>PRE</prgLevelType>
+            <startDatetime>1571170050618</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52974</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>0</cycleNo>
+            <endDatetime>1571170050105</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>3</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>PROCREATION</prgActivityType>
+            <prgLevelType>PRE</prgLevelType>
+            <startDatetime>1571170050022</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52974</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>0</cycleNo>
+            <endDatetime>1571170049897</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>2</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>EXECUTION_ORDER</prgActivityType>
+            <startDatetime>1571170049891</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+          <progressLevelDataList>
+            <batchNo>52974</batchNo>
+            <batchRevNo>1</batchRevNo>
+            <cycleNo>0</cycleNo>
+            <endDatetime>1571170049890</endDatetime>
+            <failedOver>N</failedOver>
+            <indicatorNo>1</indicatorNo>
+            <installationCode>JBM_9470</installationCode>
+            <prgActivityType>INITIALIZATION</prgActivityType>
+            <startDatetime>1571170049796</startDatetime>
+            <status>CO</status>
+          </progressLevelDataList>
+        </batchDataList>
+      </return>
+    </ns2:getBatchInfoResponse>
+  </soap:Body>
+</soap:Envelope>
+
+2019-10-15 15:16:29,085 642072 [main] DEBUG c.s.m.b.service.MajescoSOAPService - Majesco BATCH endpoint: https://mbsu.shelterinsurance.com:8743/jbeamicd?wsdl
+2019-10-15 15:16:29,086 642073 [main] DEBUG c.s.m.b.service.MajescoSOAPService - Majesco BATCH Request:
+<wslite.http.HTTPRequest@772485dd sslTrustAllCerts=false proxy=null useCaches=false followRedirects=true sslTrustStoreFile=null url=https://mbsu.shelterinsurance.com:8743/jbeamicd?wsdl headers={Content-Type=text/xml; charset=UTF-8} readTimeout=1200000 connectTimeout=600000 method=POST>
+2019-10-15 15:16:29,087 642074 [main] DEBUG c.s.m.b.service.MajescoSOAPService - Request Body:
+<?xml version='1.0' encoding='UTF-8'?>
+<soapenv:Envelope xmlns:soapenv='http://schemas.xmlsoap.org/soap/envelope/' xmlns:ser='http://services.server.ws.monitor.stgmastek.com/'>
+  <soapenv:Header />
+  <soapenv:Body><ser:getBatchObjectDetails>
+  <reqBatchDetails>
+    <batchNo>52974</batchNo>
+    <batchRevNo>1</batchRevNo>
+    <installationCode>STGMil14</installationCode>
+    <cycleNo>1</cycleNo>
+    <prePost>PRE</prePost>
+  </reqBatchDetails>
+</ser:getBatchObjectDetails></soapenv:Body>
+</soapenv:Envelope>
+2019-10-15 15:16:29,088 642075 [main] DEBUG c.s.m.b.service.MajescoSOAPService - Majesco BATCH Response:
+<wslite.http.HTTPResponse@5a12c728 expiration=Wed Dec 31 18:00:00 CST 1969 statusMessage=OK charset=UTF-8 date=Tue Oct 15 15:16:25 CDT 2019 contentLength=603 lastModified=Wed Dec 31 18:00:00 CST 1969 url=https://mbsu.shelterinsurance.com:8743/jbeamicd?wsdl statusCode=200 headers={=HTTP/1.1 200 OK, Access-Control-Allow-Credentials=include, Access-Control-Allow-Headers=origin, content-type, accept, authorization, Access-Control-Allow-Methods=GET, POST, PUT, DELETE, OPTIONS, HEAD, Access-Control-Allow-Origin=*, Access-Control-Max-Age=1209600, Connection=close, Content-Length=603, Content-Type=text/xml;charset=UTF-8, Date=Tue, 15 Oct 2019 20:16:25 GMT} contentEncoding=null contentType=text/xml>
+2019-10-15 15:16:29,090 642077 [main] DEBUG c.s.m.b.service.MajescoSOAPService - Response Body:
+<?xml version="1.0" encoding="UTF-8"?><soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <ns2:getBatchObjectDetailsResponse xmlns:ns2="http://services.server.ws.monitor.stgmastek.com/">
+      <return>
+        <responseTime>1571170585707</responseTime>
+        <responseType>OK</responseType>
+        <batchObjectList>
+          <beSeqNo>2489434</beSeqNo>
+          <objExecEndTime>1571170052251</objExecEndTime>
+          <objExecStartTime>1571170052201</objExecStartTime>
+          <status>Completed</status>
+          <taskName>REFRESH_BUSINESS_DAY - Refresh Business Day</taskName>
+          <timeTaken>50</timeTaken>
+        </batchObjectList>
+      </return>
+    </ns2:getBatchObjectDetailsResponse>
+  </soap:Body>
+</soap:Envelope>
+
+2019-10-15 15:16:29,139 642126 [main] DEBUG c.s.m.b.service.MajescoSOAPService - Majesco BATCH endpoint: https://mbsu.shelterinsurance.com:8743/jbeamicd?wsdl
+2019-10-15 15:16:29,140 642127 [main] DEBUG c.s.m.b.service.MajescoSOAPService - Majesco BATCH Request:
+<wslite.http.HTTPRequest@6e5bfdfc sslTrustAllCerts=false proxy=null useCaches=false followRedirects=true sslTrustStoreFile=null url=https://mbsu.shelterinsurance.com:8743/jbeamicd?wsdl headers={Content-Type=text/xml; charset=UTF-8} readTimeout=1200000 connectTimeout=600000 method=POST>
+2019-10-15 15:16:29,141 642128 [main] DEBUG c.s.m.b.service.MajescoSOAPService - Request Body:
+<?xml version='1.0' encoding='UTF-8'?>
+<soapenv:Envelope xmlns:soapenv='http://schemas.xmlsoap.org/soap/envelope/' xmlns:ser='http://services.server.ws.monitor.stgmastek.com/'>
+  <soapenv:Header />
+  <soapenv:Body><ser:getBatchObjectDetails>
+  <reqBatchDetails>
+    <batchNo>52974</batchNo>
+    <batchRevNo>1</batchRevNo>
+    <installationCode>STGMil14</installationCode>
+    <cycleNo>1</cycleNo>
+    <prePost>POLICY</prePost>
+  </reqBatchDetails>
+</ser:getBatchObjectDetails></soapenv:Body>
+</soapenv:Envelope>
+2019-10-15 15:16:29,142 642129 [main] DEBUG c.s.m.b.service.MajescoSOAPService - Majesco BATCH Response:
+<wslite.http.HTTPResponse@3d829787 expiration=Wed Dec 31 18:00:00 CST 1969 statusMessage=OK charset=UTF-8 date=Tue Oct 15 15:16:25 CDT 2019 contentLength=493 lastModified=Wed Dec 31 18:00:00 CST 1969 url=https://mbsu.shelterinsurance.com:8743/jbeamicd?wsdl statusCode=200 headers={=HTTP/1.1 200 OK, Access-Control-Allow-Credentials=include, Access-Control-Allow-Headers=origin, content-type, accept, authorization, Access-Control-Allow-Methods=GET, POST, PUT, DELETE, OPTIONS, HEAD, Access-Control-Allow-Origin=*, Access-Control-Max-Age=1209600, Connection=close, Content-Encoding=gzip, Content-Length=493, Content-Type=text/xml;charset=UTF-8, Date=Tue, 15 Oct 2019 20:16:25 GMT, Vary=Accept-Encoding} contentEncoding=gzip contentType=text/xml>
+2019-10-15 15:16:29,144 642131 [main] DEBUG c.s.m.b.service.MajescoSOAPService - Response Body:
+<?xml version="1.0" encoding="UTF-8"?><soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <ns2:getBatchObjectDetailsResponse xmlns:ns2="http://services.server.ws.monitor.stgmastek.com/">
+      <return>
+        <responseTime>1571170585760</responseTime>
+        <responseType>OK</responseType>
+        <batchObjectList>
+          <beSeqNo>2489071</beSeqNo>
+          <objExecEndTime>1571170085829</objExecEndTime>
+          <objExecStartTime>1571170083681</objExecStartTime>
+          <status>Completed</status>
+          <taskName>CANCELLATION_CHECK - cancellation_check ()</taskName>
+          <timeTaken>2148</timeTaken>
+        </batchObjectList>
+        <batchObjectList>
+          <beSeqNo>2489075</beSeqNo>
+          <objExecEndTime>1571170085750</objExecEndTime>
+          <objExecStartTime>1571170083676</objExecStartTime>
+          <status>Completed</status>
+          <taskName>CANCELLATION_CHECK - cancellation_check ()</taskName>
+          <timeTaken>2074</timeTaken>
+        </batchObjectList>
+        <batchObjectList>
+          <beSeqNo>2489086</beSeqNo>
+          <objExecEndTime>1571170085807</objExecEndTime>
+          <objExecStartTime>1571170083666</objExecStartTime>
+          <status>Completed</status>
+          <taskName>CANCELLATION_CHECK - cancellation_check ()</taskName>
+          <timeTaken>2141</timeTaken>
+        </batchObjectList>
+        <batchObjectList>
+          <beSeqNo>2489084</beSeqNo>
+          <objExecEndTime>1571170084331</objExecEndTime>
+          <objExecStartTime>1571170083664</objExecStartTime>
+          <status>Completed</status>
+          <taskName>CANCELLATION_CHECK - cancellation_check ()</taskName>
+          <timeTaken>667</timeTaken>
+        </batchObjectList>
+        <batchObjectList>
+          <beSeqNo>2489072</beSeqNo>
+          <objExecEndTime>1571170083679</objExecEndTime>
+          <objExecStartTime>1571170083572</objExecStartTime>
+          <status>Completed</status>
+          <taskName>PAST_DUE - Past_Due()</taskName>
+          <timeTaken>107</timeTaken>
+        </batchObjectList>
+        <batchObjectList>
+          <beSeqNo>2489087</beSeqNo>
+          <objExecEndTime>1571170083663</objExecEndTime>
+          <objExecStartTime>1571170083569</objExecStartTime>
+          <status>Completed</status>
+          <taskName>PAST_DUE - Past_Due()</taskName>
+          <timeTaken>94</timeTaken>
+        </batchObjectList>
+        <batchObjectList>
+          <beSeqNo>2489082</beSeqNo>
+          <objExecEndTime>1571170083660</objExecEndTime>
+          <objExecStartTime>1571170083559</objExecStartTime>
+          <status>Completed</status>
+          <taskName>PAST_DUE - Past_Due()</taskName>
+          <timeTaken>101</timeTaken>
+        </batchObjectList>
+        <batchObjectList>
+          <beSeqNo>2489078</beSeqNo>
+          <objExecEndTime>1571170083673</objExecEndTime>
+          <objExecStartTime>1571170083556</objExecStartTime>
+          <status>Completed</status>
+          <taskName>PAST_DUE - Past_Due()</taskName>
+          <timeTaken>117</timeTaken>
+        </batchObjectList>
+      </return>
+    </ns2:getBatchObjectDetailsResponse>
+  </soap:Body>
+</soap:Envelope>
+
+2019-10-15 15:16:29,148 642135 [main] DEBUG c.s.m.b.tasklet.StartBatchTasklet - BatchObjectDetails sequenceNumbers [2489071, 2489075, 2489086, 2489084, 2489072, 2489087, 2489082, 2489078]
+2019-10-15 15:16:29,180 642167 [main] DEBUG c.s.majesco.batch.dao.StgBaseDao - policy activities for [2489071, 2489075, 2489086, 2489084, 2489072, 2489087, 2489082, 2489078]
+2019-10-15 15:16:29,247 642234 [main] DEBUG c.s.majesco.batch.dao.StgBaseDao - com.shelter.majesco.batch.domain.BatchPolicyResult(policyNumber, policyEffectiveDate, jobName, policyTermId, jobStatus, outputEvent)
+2019-10-15 15:16:29,250 642237 [main] DEBUG c.s.majesco.batch.dao.StgBaseDao - com.shelter.majesco.batch.domain.BatchPolicyResult(910152103, 2019-10-15, CANCELLATION_CHECK, 47402, COMPLETED, null, SAY)
+2019-10-15 15:16:29,255 642242 [main] DEBUG c.s.majesco.batch.dao.StgBaseDao - com.shelter.majesco.batch.domain.BatchPolicyResult(910152100, 2019-10-15, CANCELLATION_CHECK, 47399, COMPLETED, null, SAY)
+2019-10-15 15:16:29,261 642248 [main] DEBUG c.s.majesco.batch.dao.StgBaseDao - com.shelter.majesco.batch.domain.BatchPolicyResult(910152102, 2019-10-15, CANCELLATION_CHECK, 47401, COMPLETED, null, SAY)
+2019-10-15 15:16:29,264 642251 [main] DEBUG c.s.majesco.batch.dao.StgBaseDao - com.shelter.majesco.batch.domain.BatchPolicyResult(910152101, 2019-10-15, CANCELLATION_CHECK, 47400, COMPLETED, null, SAY)
+2019-10-15 15:16:29,267 642254 [main] DEBUG c.s.majesco.batch.dao.StgBaseDao - com.shelter.majesco.batch.domain.BatchPolicyResult(910152103, 2019-10-15, PAST_DUE, 47402, COMPLETED, null, SAY)
+2019-10-15 15:16:29,271 642258 [main] DEBUG c.s.majesco.batch.dao.StgBaseDao - com.shelter.majesco.batch.domain.BatchPolicyResult(910152102, 2019-10-15, PAST_DUE, 47401, COMPLETED, null, SAY)
+2019-10-15 15:16:29,274 642261 [main] DEBUG c.s.majesco.batch.dao.StgBaseDao - com.shelter.majesco.batch.domain.BatchPolicyResult(910152101, 2019-10-15, PAST_DUE, 47400, COMPLETED, null, SAY)
+2019-10-15 15:16:29,277 642264 [main] DEBUG c.s.majesco.batch.dao.StgBaseDao - com.shelter.majesco.batch.domain.BatchPolicyResult(910152100, 2019-10-15, PAST_DUE, 47399, COMPLETED, null, SAY)
+2019-10-15 15:16:29,346 642333 [main] DEBUG c.s.m.b.service.MajescoSOAPService - Majesco BATCH endpoint: https://mbsu.shelterinsurance.com:8743/jbeamicd?wsdl
+2019-10-15 15:16:29,347 642334 [main] DEBUG c.s.m.b.service.MajescoSOAPService - Majesco BATCH Request:
+<wslite.http.HTTPRequest@49bf29c6 sslTrustAllCerts=false proxy=null useCaches=false followRedirects=true sslTrustStoreFile=null url=https://mbsu.shelterinsurance.com:8743/jbeamicd?wsdl headers={Content-Type=text/xml; charset=UTF-8} readTimeout=1200000 connectTimeout=600000 method=POST>
+2019-10-15 15:16:29,348 642335 [main] DEBUG c.s.m.b.service.MajescoSOAPService - Request Body:
+<?xml version='1.0' encoding='UTF-8'?>
+<soapenv:Envelope xmlns:soapenv='http://schemas.xmlsoap.org/soap/envelope/' xmlns:ser='http://services.server.ws.monitor.stgmastek.com/'>
+  <soapenv:Header />
+  <soapenv:Body><ser:getBatchObjectDetails>
+  <reqBatchDetails>
+    <batchNo>52974</batchNo>
+    <batchRevNo>1</batchRevNo>
+    <installationCode>STGMil14</installationCode>
+    <cycleNo>1</cycleNo>
+    <prePost>POST</prePost>
+  </reqBatchDetails>
+</ser:getBatchObjectDetails></soapenv:Body>
+</soapenv:Envelope>
+2019-10-15 15:16:29,349 642336 [main] DEBUG c.s.m.b.service.MajescoSOAPService - Majesco BATCH Response:
+<wslite.http.HTTPResponse@7ee55e70 expiration=Wed Dec 31 18:00:00 CST 1969 statusMessage=OK charset=UTF-8 date=Tue Oct 15 15:16:25 CDT 2019 contentLength=641 lastModified=Wed Dec 31 18:00:00 CST 1969 url=https://mbsu.shelterinsurance.com:8743/jbeamicd?wsdl statusCode=200 headers={=HTTP/1.1 200 OK, Access-Control-Allow-Credentials=include, Access-Control-Allow-Headers=origin, content-type, accept, authorization, Access-Control-Allow-Methods=GET, POST, PUT, DELETE, OPTIONS, HEAD, Access-Control-Allow-Origin=*, Access-Control-Max-Age=1209600, Connection=close, Content-Length=641, Content-Type=text/xml;charset=UTF-8, Date=Tue, 15 Oct 2019 20:16:25 GMT} contentEncoding=null contentType=text/xml>
+2019-10-15 15:16:29,351 642338 [main] DEBUG c.s.m.b.service.MajescoSOAPService - Response Body:
+<?xml version="1.0" encoding="UTF-8"?><soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <ns2:getBatchObjectDetailsResponse xmlns:ns2="http://services.server.ws.monitor.stgmastek.com/">
+      <return>
+        <responseTime>1571170585968</responseTime>
+        <responseType>OK</responseType>
+        <batchObjectList>
+          <beSeqNo>2489441</beSeqNo>
+          <objExecEndTime>1571170087650</objExecEndTime>
+          <objExecStartTime>1571170087531</objExecStartTime>
+          <status>Completed</status>
+          <taskName>OUTPUT_FORMS_SCHEDULE_JOB - com.stgmastek.core.print.OutputFormsScheduleBatchJob</taskName>
+          <timeTaken>119</timeTaken>
+        </batchObjectList>
+      </return>
+    </ns2:getBatchObjectDetailsResponse>
+  </soap:Body>
+</soap:Envelope>
+
+2019-10-15 15:16:29,399 642386 [main] DEBUG c.s.m.b.service.MajescoSOAPService - Majesco BATCH endpoint: https://mbsu.shelterinsurance.com:8743/jbeamicd?wsdl
+2019-10-15 15:16:29,400 642387 [main] DEBUG c.s.m.b.service.MajescoSOAPService - Majesco BATCH Request:
+<wslite.http.HTTPRequest@7668d560 sslTrustAllCerts=false proxy=null useCaches=false followRedirects=true sslTrustStoreFile=null url=https://mbsu.shelterinsurance.com:8743/jbeamicd?wsdl headers={Content-Type=text/xml; charset=UTF-8} readTimeout=1200000 connectTimeout=600000 method=POST>
+2019-10-15 15:16:29,401 642388 [main] DEBUG c.s.m.b.service.MajescoSOAPService - Request Body:
+<?xml version='1.0' encoding='UTF-8'?>
+<soapenv:Envelope xmlns:soapenv='http://schemas.xmlsoap.org/soap/envelope/' xmlns:ser='http://services.server.ws.monitor.stgmastek.com/'>
+  <soapenv:Header />
+  <soapenv:Body><ser:getFaliedObjectDetails>
+  <reqListenerInfo>
+    <batchNo>52974</batchNo>
+    <batchRevNo>1</batchRevNo>
+    <installationCode>STGMil14</installationCode>
+    <listenerId>0</listenerId>
+  </reqListenerInfo>
+</ser:getFaliedObjectDetails></soapenv:Body>
+</soapenv:Envelope>
+2019-10-15 15:16:29,402 642389 [main] DEBUG c.s.m.b.service.MajescoSOAPService - Majesco BATCH Response:
+<wslite.http.HTTPResponse@46292372 expiration=Wed Dec 31 18:00:00 CST 1969 statusMessage=OK charset=UTF-8 date=Tue Oct 15 15:16:26 CDT 2019 contentLength=333 lastModified=Wed Dec 31 18:00:00 CST 1969 url=https://mbsu.shelterinsurance.com:8743/jbeamicd?wsdl statusCode=200 headers={=HTTP/1.1 200 OK, Access-Control-Allow-Credentials=include, Access-Control-Allow-Headers=origin, content-type, accept, authorization, Access-Control-Allow-Methods=GET, POST, PUT, DELETE, OPTIONS, HEAD, Access-Control-Allow-Origin=*, Access-Control-Max-Age=1209600, Connection=close, Content-Length=333, Content-Type=text/xml;charset=UTF-8, Date=Tue, 15 Oct 2019 20:16:26 GMT} contentEncoding=null contentType=text/xml>
+2019-10-15 15:16:29,404 642391 [main] DEBUG c.s.m.b.service.MajescoSOAPService - Response Body:
+<?xml version="1.0" encoding="UTF-8"?><soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <ns2:getFaliedObjectDetailsResponse xmlns:ns2="http://services.server.ws.monitor.stgmastek.com/">
+      <return>
+        <responseTime>1571170586020</responseTime>
+        <responseType>OK</responseType>
+      </return>
+    </ns2:getFaliedObjectDetailsResponse>
+  </soap:Body>
+</soap:Envelope>
+
+2019-10-15 15:16:29,409 642396 [main] INFO  c.s.m.b.c.JobCompletionNotificationListener - !!! JOB FINISHED!!!
+2019-10-15 15:16:29,416 642403 [main] INFO  o.s.b.c.l.support.SimpleJobLauncher - Job: [FlowJob: [name=majescoNightlyBatch]] completed with the following parameters: [{run.id=1}] and the following status: [COMPLETED]
+2019-10-15 15:16:29,421 642408 [main] INFO  c.s.m.batch.agedata.AgeDataRunner - Started AgeDataRunner in 540.558 seconds (JVM running for 643.476)
+2019-10-15 15:16:29,421 642408 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@7383eae2: startup date [Tue Oct 15 15:07:28 CDT 2019]; root of context hierarchy
+2019-10-15 15:16:29,422 642409 [main] INFO  o.s.c.s.DefaultLifecycleProcessor - Stopping beans in phase 2147483647
+2019-10-15 15:16:29,422 642409 [main] INFO  o.s.c.s.DefaultLifecycleProcessor - Stopping beans in phase -2147482648
+2019-10-15 15:16:29,423 642410 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2019-10-15 15:16:29,423 642410 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+2019-10-15 15:16:29,442 642429 [main] DEBUG c.s.m.batch.agedata.dao.BpmsCoreDao - batchJobsTotalSql row: {JOBS_TOTAL=31}
+2019-10-15 15:16:29,444 642431 [main] DEBUG c.s.m.batch.agedata.dao.BpmsCoreDao - batchJobsFailedSql row: {STATUS=CO, STATUS_COUNT=31}
+2019-10-15 15:16:29,446 642433 [main] DEBUG c.s.m.batch.agedata.dao.BpmsCoreDao - getBatchTimeSql row: {BATCH_NO=52974, ELAPSED_SECONDS=69, ELAPSED_MINUTES=1, EXEC_START_TIME=2019-10-15 15:07:29.789, EXEC_END_TIME=2019-10-15 15:08:38.817}
+2019-10-15 15:16:34,026 647013 [main] DEBUG c.s.majesco.batch.dao.StgBaseDao - table row: {NEXT_BUSINESS_DATE=2020-03-17 00:00:00.0}
+2019-10-15 15:16:34,026 647013 [main] DEBUG c.s.majesco.batch.dao.StgBaseDao - nextBusinessDate: 2020-03-17 00:00:00.0
+2019-10-15 15:16:34,028 647015 [main] DEBUG c.s.majesco.batch.dao.StgBaseDao - processing with NEXT_BUSINESS_DATE: 03/17/2020
